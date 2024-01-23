@@ -3,7 +3,7 @@
 [ext_resource type="Script" path="res://Entities/WeaponProjectile1.gd" id="1_i7jpw"]
 
 [sub_resource type="BoxMesh" id="BoxMesh_pqxmn"]
-size = Vector3(0.06, 0.06, 0.12)
+size = Vector3(0.06, 0.06, 0.06)
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_r2h5h"]
 albedo_color = Color(1, 0, 0, 1)
