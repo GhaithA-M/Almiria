@@ -1,0 +1,2001 @@
+[gd_scene load_steps=2 format=3 uid="uid://bt7xdjuj2g2g7"]
+
+[ext_resource type="PackedScene" uid="uid://bvyis4717r2k6" path="res://Maps/Floors/World1_Floor1.tscn" id="2_uiv8n"]
+
+[node name="World1_Background" type="Node3D"]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0, 0, 0)
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0, 1, 0, -1, 0, 0, 5, 0)
+
+[node name="Background" type="Node3D" parent="."]
+
+[node name="FloorsTop" type="Node3D" parent="Background"]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 23, 0, 19)
+
+[node name="World1_Floor1_1" parent="Background/FloorsTop" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 0, 12)
+
+[node name="World1_Floor1_2" parent="Background/FloorsTop" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 0, 10)
+
+[node name="World1_Floor1_3" parent="Background/FloorsTop" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 0, 8)
+
+[node name="World1_Floor1_4" parent="Background/FloorsTop" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 0, 6)
+
+[node name="World1_Floor1_5" parent="Background/FloorsTop" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 0, 12)
+
+[node name="World1_Floor1_6" parent="Background/FloorsTop" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 0, 10)
+
+[node name="World1_Floor1_7" parent="Background/FloorsTop" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 0, 8)
+
+[node name="World1_Floor1_8" parent="Background/FloorsTop" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 0, 6)
+
+[node name="World1_Floor1_9" parent="Background/FloorsTop" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6, 0, 12)
+
+[node name="World1_Floor1_10" parent="Background/FloorsTop" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6, 0, 10)
+
+[node name="World1_Floor1_11" parent="Background/FloorsTop" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6, 0, 8)
+
+[node name="World1_Floor1_12" parent="Background/FloorsTop" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6, 0, 6)
+
+[node name="World1_Floor1_13" parent="Background/FloorsTop" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 0, 12)
+
+[node name="World1_Floor1_14" parent="Background/FloorsTop" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 0, 10)
+
+[node name="World1_Floor1_15" parent="Background/FloorsTop" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 0, 8)
+
+[node name="World1_Floor1_16" parent="Background/FloorsTop" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 0, 6)
+
+[node name="World1_Floor1_17" parent="Background/FloorsTop" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, 12)
+
+[node name="World1_Floor1_18" parent="Background/FloorsTop" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, 10)
+
+[node name="World1_Floor1_19" parent="Background/FloorsTop" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, 8)
+
+[node name="World1_Floor1_20" parent="Background/FloorsTop" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, 6)
+
+[node name="World1_Floor1_21" parent="Background/FloorsTop" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.90735e-06, 0, 12)
+
+[node name="World1_Floor1_22" parent="Background/FloorsTop" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.8147e-06, 0, 10)
+
+[node name="World1_Floor1_23" parent="Background/FloorsTop" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 8)
+
+[node name="World1_Floor1_24" parent="Background/FloorsTop" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 6)
+
+[node name="World1_Floor1_25" parent="Background/FloorsTop" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 12)
+
+[node name="World1_Floor1_26" parent="Background/FloorsTop" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 10)
+
+[node name="World1_Floor1_27" parent="Background/FloorsTop" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 8)
+
+[node name="World1_Floor1_28" parent="Background/FloorsTop" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 6)
+
+[node name="World1_Floor1_29" parent="Background/FloorsTop" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 12)
+
+[node name="World1_Floor1_30" parent="Background/FloorsTop" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 10)
+
+[node name="World1_Floor1_31" parent="Background/FloorsTop" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 8)
+
+[node name="World1_Floor1_32" parent="Background/FloorsTop" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 6)
+
+[node name="World1_Floor1_33" parent="Background/FloorsTop" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 0, 4)
+
+[node name="World1_Floor1_34" parent="Background/FloorsTop" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 0, 4)
+
+[node name="World1_Floor1_35" parent="Background/FloorsTop" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6, 0, 4)
+
+[node name="World1_Floor1_36" parent="Background/FloorsTop" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 0, 4)
+
+[node name="World1_Floor1_37" parent="Background/FloorsTop" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, 4)
+
+[node name="World1_Floor1_38" parent="Background/FloorsTop" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 4)
+
+[node name="World1_Floor1_39" parent="Background/FloorsTop" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 4)
+
+[node name="World1_Floor1_40" parent="Background/FloorsTop" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 4)
+
+[node name="World1_Floor1_41" parent="Background/FloorsTop" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, 12)
+
+[node name="World1_Floor1_42" parent="Background/FloorsTop" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, 10)
+
+[node name="World1_Floor1_43" parent="Background/FloorsTop" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, 8)
+
+[node name="World1_Floor1_44" parent="Background/FloorsTop" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, 6)
+
+[node name="World1_Floor1_45" parent="Background/FloorsTop" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0, 12)
+
+[node name="World1_Floor1_46" parent="Background/FloorsTop" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0, 10)
+
+[node name="World1_Floor1_47" parent="Background/FloorsTop" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0, 8)
+
+[node name="World1_Floor1_48" parent="Background/FloorsTop" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0, 6)
+
+[node name="World1_Floor1_49" parent="Background/FloorsTop" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10, 0, 12)
+
+[node name="World1_Floor1_50" parent="Background/FloorsTop" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10, 0, 10)
+
+[node name="World1_Floor1_51" parent="Background/FloorsTop" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10, 0, 8)
+
+[node name="World1_Floor1_52" parent="Background/FloorsTop" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10, 0, 6)
+
+[node name="World1_Floor1_53" parent="Background/FloorsTop" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12, 0, 12)
+
+[node name="World1_Floor1_54" parent="Background/FloorsTop" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12, 0, 10)
+
+[node name="World1_Floor1_55" parent="Background/FloorsTop" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12, 0, 8)
+
+[node name="World1_Floor1_56" parent="Background/FloorsTop" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12, 0, 6)
+
+[node name="World1_Floor1_57" parent="Background/FloorsTop" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14, 0, 12)
+
+[node name="World1_Floor1_58" parent="Background/FloorsTop" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14, 0, 10)
+
+[node name="World1_Floor1_59" parent="Background/FloorsTop" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14, 0, 8)
+
+[node name="World1_Floor1_60" parent="Background/FloorsTop" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14, 0, 6)
+
+[node name="World1_Floor1_61" parent="Background/FloorsTop" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 16, 0, 12)
+
+[node name="World1_Floor1_62" parent="Background/FloorsTop" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 16, 0, 10)
+
+[node name="World1_Floor1_63" parent="Background/FloorsTop" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 16, 0, 8)
+
+[node name="World1_Floor1_64" parent="Background/FloorsTop" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 16, 0, 6)
+
+[node name="World1_Floor1_65" parent="Background/FloorsTop" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 18, 0, 12)
+
+[node name="World1_Floor1_66" parent="Background/FloorsTop" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 18, 0, 10)
+
+[node name="World1_Floor1_67" parent="Background/FloorsTop" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 18, 0, 8)
+
+[node name="World1_Floor1_68" parent="Background/FloorsTop" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 18, 0, 6)
+
+[node name="World1_Floor1_69" parent="Background/FloorsTop" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, 4)
+
+[node name="World1_Floor1_70" parent="Background/FloorsTop" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0, 4)
+
+[node name="World1_Floor1_71" parent="Background/FloorsTop" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10, 0, 4)
+
+[node name="World1_Floor1_72" parent="Background/FloorsTop" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12, 0, 4)
+
+[node name="World1_Floor1_73" parent="Background/FloorsTop" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14, 0, 4)
+
+[node name="World1_Floor1_74" parent="Background/FloorsTop" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 16, 0, 4)
+
+[node name="World1_Floor1_75" parent="Background/FloorsTop" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 18, 0, 4)
+
+[node name="World1_Floor1_76" parent="Background/FloorsTop" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 20, 0, 12)
+
+[node name="World1_Floor1_77" parent="Background/FloorsTop" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 20, 0, 10)
+
+[node name="World1_Floor1_78" parent="Background/FloorsTop" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 20, 0, 8)
+
+[node name="World1_Floor1_79" parent="Background/FloorsTop" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 20, 0, 6)
+
+[node name="World1_Floor1_80" parent="Background/FloorsTop" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 22, 0, 12)
+
+[node name="World1_Floor1_81" parent="Background/FloorsTop" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 22, 0, 10)
+
+[node name="World1_Floor1_82" parent="Background/FloorsTop" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 22, 0, 8)
+
+[node name="World1_Floor1_83" parent="Background/FloorsTop" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 22, 0, 6)
+
+[node name="World1_Floor1_84" parent="Background/FloorsTop" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 24, 0, 12)
+
+[node name="World1_Floor1_85" parent="Background/FloorsTop" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 24, 0, 10)
+
+[node name="World1_Floor1_86" parent="Background/FloorsTop" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 24, 0, 8)
+
+[node name="World1_Floor1_87" parent="Background/FloorsTop" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 24, 0, 6)
+
+[node name="World1_Floor1_88" parent="Background/FloorsTop" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 26, 0, 12)
+
+[node name="World1_Floor1_89" parent="Background/FloorsTop" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 26, 0, 10)
+
+[node name="World1_Floor1_90" parent="Background/FloorsTop" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 26, 0, 8)
+
+[node name="World1_Floor1_91" parent="Background/FloorsTop" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 26, 0, 6)
+
+[node name="World1_Floor1_92" parent="Background/FloorsTop" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 28, 0, 12)
+
+[node name="World1_Floor1_93" parent="Background/FloorsTop" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 28, 0, 10)
+
+[node name="World1_Floor1_94" parent="Background/FloorsTop" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 28, 0, 8)
+
+[node name="World1_Floor1_95" parent="Background/FloorsTop" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 28, 0, 6)
+
+[node name="World1_Floor1_96" parent="Background/FloorsTop" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 30, 0, 12)
+
+[node name="World1_Floor1_97" parent="Background/FloorsTop" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 30, 0, 10)
+
+[node name="World1_Floor1_98" parent="Background/FloorsTop" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 30, 0, 8)
+
+[node name="World1_Floor1_99" parent="Background/FloorsTop" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 30, 0, 6)
+
+[node name="World1_Floor1_100" parent="Background/FloorsTop" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 32, 0, 12)
+
+[node name="World1_Floor1_101" parent="Background/FloorsTop" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 32, 0, 10)
+
+[node name="World1_Floor1_102" parent="Background/FloorsTop" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 32, 0, 8)
+
+[node name="World1_Floor1_103" parent="Background/FloorsTop" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 32, 0, 6)
+
+[node name="World1_Floor1_104" parent="Background/FloorsTop" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 34, 0, 12)
+
+[node name="World1_Floor1_105" parent="Background/FloorsTop" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 34, 0, 10)
+
+[node name="World1_Floor1_106" parent="Background/FloorsTop" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 34, 0, 8)
+
+[node name="World1_Floor1_107" parent="Background/FloorsTop" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 34, 0, 6)
+
+[node name="World1_Floor1_108" parent="Background/FloorsTop" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 20, 0, 4)
+
+[node name="World1_Floor1_109" parent="Background/FloorsTop" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 22, 0, 4)
+
+[node name="World1_Floor1_110" parent="Background/FloorsTop" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 24, 0, 4)
+
+[node name="World1_Floor1_111" parent="Background/FloorsTop" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 26, 0, 4)
+
+[node name="World1_Floor1_112" parent="Background/FloorsTop" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 28, 0, 4)
+
+[node name="World1_Floor1_113" parent="Background/FloorsTop" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 30, 0, 4)
+
+[node name="World1_Floor1_114" parent="Background/FloorsTop" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 32, 0, 4)
+
+[node name="World1_Floor1_115" parent="Background/FloorsTop" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 34, 0, 4)
+
+[node name="World1_Floor1_116" parent="Background/FloorsTop" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 36, 0, 12)
+
+[node name="World1_Floor1_117" parent="Background/FloorsTop" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 36, 0, 10)
+
+[node name="World1_Floor1_118" parent="Background/FloorsTop" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 36, 0, 8)
+
+[node name="World1_Floor1_119" parent="Background/FloorsTop" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 36, 0, 6)
+
+[node name="World1_Floor1_120" parent="Background/FloorsTop" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 38, 0, 12)
+
+[node name="World1_Floor1_121" parent="Background/FloorsTop" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 38, 0, 10)
+
+[node name="World1_Floor1_122" parent="Background/FloorsTop" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 38, 0, 8)
+
+[node name="World1_Floor1_123" parent="Background/FloorsTop" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 38, 0, 6)
+
+[node name="World1_Floor1_144" parent="Background/FloorsTop" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 36, 0, 4.00001)
+
+[node name="World1_Floor1_145" parent="Background/FloorsTop" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 38, 0, 4.00001)
+
+[node name="World1_Floor1_124" parent="Background/FloorsTop" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 0, 2)
+
+[node name="World1_Floor1_125" parent="Background/FloorsTop" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 0, 0)
+
+[node name="World1_Floor1_126" parent="Background/FloorsTop" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 0, -2)
+
+[node name="World1_Floor1_127" parent="Background/FloorsTop" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 0, -4)
+
+[node name="World1_Floor1_128" parent="Background/FloorsTop" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 0, 2)
+
+[node name="World1_Floor1_129" parent="Background/FloorsTop" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 0, 3.8147e-06)
+
+[node name="World1_Floor1_130" parent="Background/FloorsTop" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 0, -2)
+
+[node name="World1_Floor1_131" parent="Background/FloorsTop" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 0, -4)
+
+[node name="World1_Floor1_132" parent="Background/FloorsTop" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6, 0, 2)
+
+[node name="World1_Floor1_133" parent="Background/FloorsTop" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6, 0, 3.8147e-06)
+
+[node name="World1_Floor1_134" parent="Background/FloorsTop" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6, 0, -2)
+
+[node name="World1_Floor1_135" parent="Background/FloorsTop" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6, 0, -4)
+
+[node name="World1_Floor1_136" parent="Background/FloorsTop" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 0, 2)
+
+[node name="World1_Floor1_137" parent="Background/FloorsTop" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 0, 0)
+
+[node name="World1_Floor1_138" parent="Background/FloorsTop" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 0, -2)
+
+[node name="World1_Floor1_139" parent="Background/FloorsTop" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 0, -4)
+
+[node name="World1_Floor1_140" parent="Background/FloorsTop" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, 2)
+
+[node name="World1_Floor1_141" parent="Background/FloorsTop" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, 0)
+
+[node name="World1_Floor1_142" parent="Background/FloorsTop" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, -2)
+
+[node name="World1_Floor1_143" parent="Background/FloorsTop" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, -4)
+
+[node name="World1_Floor1_146" parent="Background/FloorsTop" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.8147e-06, 0, 2)
+
+[node name="World1_Floor1_147" parent="Background/FloorsTop" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.8147e-06, 0, 0)
+
+[node name="World1_Floor1_148" parent="Background/FloorsTop" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -2)
+
+[node name="World1_Floor1_149" parent="Background/FloorsTop" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.8147e-06, 0, -4)
+
+[node name="World1_Floor1_150" parent="Background/FloorsTop" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 2)
+
+[node name="World1_Floor1_151" parent="Background/FloorsTop" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 0)
+
+[node name="World1_Floor1_152" parent="Background/FloorsTop" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, -2)
+
+[node name="World1_Floor1_153" parent="Background/FloorsTop" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, -4)
+
+[node name="World1_Floor1_154" parent="Background/FloorsTop" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 2)
+
+[node name="World1_Floor1_155" parent="Background/FloorsTop" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 0)
+
+[node name="World1_Floor1_156" parent="Background/FloorsTop" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, -2)
+
+[node name="World1_Floor1_157" parent="Background/FloorsTop" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, -4)
+
+[node name="World1_Floor1_158" parent="Background/FloorsTop" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 0, -6)
+
+[node name="World1_Floor1_159" parent="Background/FloorsTop" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 0, -6)
+
+[node name="World1_Floor1_160" parent="Background/FloorsTop" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6, 0, -6)
+
+[node name="World1_Floor1_161" parent="Background/FloorsTop" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 0, -6)
+
+[node name="World1_Floor1_162" parent="Background/FloorsTop" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, -6)
+
+[node name="World1_Floor1_163" parent="Background/FloorsTop" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -6)
+
+[node name="World1_Floor1_164" parent="Background/FloorsTop" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, -6)
+
+[node name="World1_Floor1_165" parent="Background/FloorsTop" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, -6)
+
+[node name="World1_Floor1_166" parent="Background/FloorsTop" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, 2)
+
+[node name="World1_Floor1_167" parent="Background/FloorsTop" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, 0)
+
+[node name="World1_Floor1_168" parent="Background/FloorsTop" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, -2)
+
+[node name="World1_Floor1_169" parent="Background/FloorsTop" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, -4)
+
+[node name="World1_Floor1_170" parent="Background/FloorsTop" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0, 2)
+
+[node name="World1_Floor1_171" parent="Background/FloorsTop" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0, 0)
+
+[node name="World1_Floor1_172" parent="Background/FloorsTop" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0, -2)
+
+[node name="World1_Floor1_173" parent="Background/FloorsTop" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0, -4)
+
+[node name="World1_Floor1_174" parent="Background/FloorsTop" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10, 0, 2)
+
+[node name="World1_Floor1_175" parent="Background/FloorsTop" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10, 0, 3.8147e-06)
+
+[node name="World1_Floor1_176" parent="Background/FloorsTop" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10, 0, -2)
+
+[node name="World1_Floor1_177" parent="Background/FloorsTop" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10, 0, -4)
+
+[node name="World1_Floor1_178" parent="Background/FloorsTop" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12, 0, 2)
+
+[node name="World1_Floor1_179" parent="Background/FloorsTop" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12, 0, 1.90735e-06)
+
+[node name="World1_Floor1_180" parent="Background/FloorsTop" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12, 0, -2)
+
+[node name="World1_Floor1_181" parent="Background/FloorsTop" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12, 0, -4)
+
+[node name="World1_Floor1_182" parent="Background/FloorsTop" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14, 0, 2)
+
+[node name="World1_Floor1_183" parent="Background/FloorsTop" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14, 0, 1.90735e-06)
+
+[node name="World1_Floor1_184" parent="Background/FloorsTop" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14, 0, -2)
+
+[node name="World1_Floor1_185" parent="Background/FloorsTop" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14, 0, -3.99999)
+
+[node name="World1_Floor1_186" parent="Background/FloorsTop" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 16, 0, 2)
+
+[node name="World1_Floor1_187" parent="Background/FloorsTop" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 16, 0, 1.90735e-06)
+
+[node name="World1_Floor1_188" parent="Background/FloorsTop" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 16, 0, -2)
+
+[node name="World1_Floor1_189" parent="Background/FloorsTop" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 16, 0, -3.99999)
+
+[node name="World1_Floor1_190" parent="Background/FloorsTop" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 18, 0, 2)
+
+[node name="World1_Floor1_191" parent="Background/FloorsTop" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 18, 0, 1.90735e-06)
+
+[node name="World1_Floor1_192" parent="Background/FloorsTop" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 18, 0, -2)
+
+[node name="World1_Floor1_193" parent="Background/FloorsTop" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 18, 0, -4)
+
+[node name="World1_Floor1_194" parent="Background/FloorsTop" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, -6)
+
+[node name="World1_Floor1_195" parent="Background/FloorsTop" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0, -6)
+
+[node name="World1_Floor1_196" parent="Background/FloorsTop" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10, 0, -6)
+
+[node name="World1_Floor1_197" parent="Background/FloorsTop" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12, 0, -6)
+
+[node name="World1_Floor1_198" parent="Background/FloorsTop" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14, 0, -5.99999)
+
+[node name="World1_Floor1_199" parent="Background/FloorsTop" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 16, 0, -5.99999)
+
+[node name="World1_Floor1_200" parent="Background/FloorsTop" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 18, 0, -6)
+
+[node name="World1_Floor1_201" parent="Background/FloorsTop" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 20, 0, 2)
+
+[node name="World1_Floor1_202" parent="Background/FloorsTop" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 20, 0, 1.90735e-06)
+
+[node name="World1_Floor1_203" parent="Background/FloorsTop" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 20, 0, -2)
+
+[node name="World1_Floor1_204" parent="Background/FloorsTop" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 20, 0, -4)
+
+[node name="World1_Floor1_205" parent="Background/FloorsTop" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 22, 0, 2)
+
+[node name="World1_Floor1_206" parent="Background/FloorsTop" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 22, 0, 1.90735e-06)
+
+[node name="World1_Floor1_207" parent="Background/FloorsTop" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 22, 0, -2)
+
+[node name="World1_Floor1_208" parent="Background/FloorsTop" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 22, 0, -4)
+
+[node name="World1_Floor1_209" parent="Background/FloorsTop" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 24, 0, 2)
+
+[node name="World1_Floor1_210" parent="Background/FloorsTop" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 24, 0, 1.90735e-06)
+
+[node name="World1_Floor1_211" parent="Background/FloorsTop" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 24, 0, -2)
+
+[node name="World1_Floor1_212" parent="Background/FloorsTop" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 24, 0, -4)
+
+[node name="World1_Floor1_213" parent="Background/FloorsTop" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 26, 0, 2)
+
+[node name="World1_Floor1_214" parent="Background/FloorsTop" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 26, 0, 1.90735e-06)
+
+[node name="World1_Floor1_215" parent="Background/FloorsTop" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 26, 0, -2)
+
+[node name="World1_Floor1_216" parent="Background/FloorsTop" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 26, 0, -4)
+
+[node name="World1_Floor1_217" parent="Background/FloorsTop" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 28, 0, 2)
+
+[node name="World1_Floor1_218" parent="Background/FloorsTop" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 28, 0, 1.90735e-06)
+
+[node name="World1_Floor1_219" parent="Background/FloorsTop" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 28, 0, -2)
+
+[node name="World1_Floor1_220" parent="Background/FloorsTop" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 28, 0, -4)
+
+[node name="World1_Floor1_221" parent="Background/FloorsTop" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 30, 0, 2.00001)
+
+[node name="World1_Floor1_222" parent="Background/FloorsTop" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 30, 0, 5.72205e-06)
+
+[node name="World1_Floor1_223" parent="Background/FloorsTop" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 30, 0, -1.99999)
+
+[node name="World1_Floor1_224" parent="Background/FloorsTop" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 30, 0, -3.99999)
+
+[node name="World1_Floor1_225" parent="Background/FloorsTop" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 32, 0, 2)
+
+[node name="World1_Floor1_226" parent="Background/FloorsTop" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 32, 0, 5.72205e-06)
+
+[node name="World1_Floor1_227" parent="Background/FloorsTop" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 32, 0, -1.99999)
+
+[node name="World1_Floor1_228" parent="Background/FloorsTop" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 32, 0, -4)
+
+[node name="World1_Floor1_229" parent="Background/FloorsTop" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 34, 0, 2)
+
+[node name="World1_Floor1_230" parent="Background/FloorsTop" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 34, 0, 3.8147e-06)
+
+[node name="World1_Floor1_231" parent="Background/FloorsTop" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 34, 0, -2)
+
+[node name="World1_Floor1_232" parent="Background/FloorsTop" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 34, 0, -4)
+
+[node name="World1_Floor1_233" parent="Background/FloorsTop" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 20, 0, -6)
+
+[node name="World1_Floor1_234" parent="Background/FloorsTop" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 22, 0, -6)
+
+[node name="World1_Floor1_235" parent="Background/FloorsTop" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 24, 0, -6)
+
+[node name="World1_Floor1_236" parent="Background/FloorsTop" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 26, 0, -6)
+
+[node name="World1_Floor1_237" parent="Background/FloorsTop" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 28, 0, -6)
+
+[node name="World1_Floor1_238" parent="Background/FloorsTop" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 30, 0, -6)
+
+[node name="World1_Floor1_239" parent="Background/FloorsTop" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 32, 0, -6)
+
+[node name="World1_Floor1_240" parent="Background/FloorsTop" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 34, 0, -6)
+
+[node name="World1_Floor1_241" parent="Background/FloorsTop" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 36, 0, 2.00001)
+
+[node name="World1_Floor1_242" parent="Background/FloorsTop" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 36, 0, 3.8147e-06)
+
+[node name="World1_Floor1_243" parent="Background/FloorsTop" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 36, 0, -1.99999)
+
+[node name="World1_Floor1_244" parent="Background/FloorsTop" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 36, 0, -3.99999)
+
+[node name="World1_Floor1_245" parent="Background/FloorsTop" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 38, 0, 2.00001)
+
+[node name="World1_Floor1_246" parent="Background/FloorsTop" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 38, 0, 3.8147e-06)
+
+[node name="World1_Floor1_247" parent="Background/FloorsTop" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 38, 0, -1.99999)
+
+[node name="World1_Floor1_248" parent="Background/FloorsTop" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 38, 0, -3.99999)
+
+[node name="World1_Floor1_249" parent="Background/FloorsTop" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 36, 0, -5.99999)
+
+[node name="World1_Floor1_250" parent="Background/FloorsTop" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 38, 0, -5.99999)
+
+[node name="FloorsBottom" type="Node3D" parent="Background"]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -3, 0, 19)
+
+[node name="World1_Floor1_1" parent="Background/FloorsBottom" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 0, 2)
+
+[node name="World1_Floor1_2" parent="Background/FloorsBottom" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 0, -9.53674e-07)
+
+[node name="World1_Floor1_3" parent="Background/FloorsBottom" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 0, -2)
+
+[node name="World1_Floor1_4" parent="Background/FloorsBottom" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 0, -4)
+
+[node name="World1_Floor1_5" parent="Background/FloorsBottom" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 0, 2)
+
+[node name="World1_Floor1_6" parent="Background/FloorsBottom" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 0, -9.53674e-07)
+
+[node name="World1_Floor1_7" parent="Background/FloorsBottom" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 0, -2)
+
+[node name="World1_Floor1_8" parent="Background/FloorsBottom" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 0, -4)
+
+[node name="World1_Floor1_9" parent="Background/FloorsBottom" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6, 0, 2)
+
+[node name="World1_Floor1_10" parent="Background/FloorsBottom" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6, 0, -7.15256e-07)
+
+[node name="World1_Floor1_11" parent="Background/FloorsBottom" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6, 0, -2)
+
+[node name="World1_Floor1_12" parent="Background/FloorsBottom" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6, 0, -4)
+
+[node name="World1_Floor1_13" parent="Background/FloorsBottom" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 0, 2)
+
+[node name="World1_Floor1_14" parent="Background/FloorsBottom" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 0, -7.15256e-07)
+
+[node name="World1_Floor1_15" parent="Background/FloorsBottom" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 0, -2)
+
+[node name="World1_Floor1_16" parent="Background/FloorsBottom" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 0, -4)
+
+[node name="World1_Floor1_17" parent="Background/FloorsBottom" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, 2)
+
+[node name="World1_Floor1_18" parent="Background/FloorsBottom" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, -9.53674e-07)
+
+[node name="World1_Floor1_19" parent="Background/FloorsBottom" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, -2)
+
+[node name="World1_Floor1_20" parent="Background/FloorsBottom" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, -4)
+
+[node name="World1_Floor1_21" parent="Background/FloorsBottom" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 2)
+
+[node name="World1_Floor1_22" parent="Background/FloorsBottom" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -9.53674e-07)
+
+[node name="World1_Floor1_23" parent="Background/FloorsBottom" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -2)
+
+[node name="World1_Floor1_24" parent="Background/FloorsBottom" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -4)
+
+[node name="World1_Floor1_25" parent="Background/FloorsBottom" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 2)
+
+[node name="World1_Floor1_26" parent="Background/FloorsBottom" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, -7.15256e-07)
+
+[node name="World1_Floor1_27" parent="Background/FloorsBottom" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, -2)
+
+[node name="World1_Floor1_28" parent="Background/FloorsBottom" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, -4)
+
+[node name="World1_Floor1_29" parent="Background/FloorsBottom" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 2)
+
+[node name="World1_Floor1_30" parent="Background/FloorsBottom" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, -9.53674e-07)
+
+[node name="World1_Floor1_31" parent="Background/FloorsBottom" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, -2)
+
+[node name="World1_Floor1_32" parent="Background/FloorsBottom" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, -4)
+
+[node name="World1_Floor1_33" parent="Background/FloorsBottom" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 0, -6)
+
+[node name="World1_Floor1_34" parent="Background/FloorsBottom" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 0, -6)
+
+[node name="World1_Floor1_35" parent="Background/FloorsBottom" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6, 0, -6)
+
+[node name="World1_Floor1_36" parent="Background/FloorsBottom" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 0, -6)
+
+[node name="World1_Floor1_37" parent="Background/FloorsBottom" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, -6)
+
+[node name="World1_Floor1_38" parent="Background/FloorsBottom" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -6)
+
+[node name="World1_Floor1_39" parent="Background/FloorsBottom" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, -6)
+
+[node name="World1_Floor1_40" parent="Background/FloorsBottom" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, -6)
+
+[node name="World1_Floor1_41" parent="Background/FloorsBottom" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, 2)
+
+[node name="World1_Floor1_42" parent="Background/FloorsBottom" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, 4.76837e-07)
+
+[node name="World1_Floor1_43" parent="Background/FloorsBottom" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, -2)
+
+[node name="World1_Floor1_44" parent="Background/FloorsBottom" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, -4)
+
+[node name="World1_Floor1_45" parent="Background/FloorsBottom" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0, 2)
+
+[node name="World1_Floor1_46" parent="Background/FloorsBottom" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0, 4.76837e-07)
+
+[node name="World1_Floor1_47" parent="Background/FloorsBottom" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0, -2)
+
+[node name="World1_Floor1_48" parent="Background/FloorsBottom" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0, -4)
+
+[node name="World1_Floor1_49" parent="Background/FloorsBottom" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10, 0, 2)
+
+[node name="World1_Floor1_50" parent="Background/FloorsBottom" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10, 0, 7.15256e-07)
+
+[node name="World1_Floor1_51" parent="Background/FloorsBottom" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10, 0, -2)
+
+[node name="World1_Floor1_52" parent="Background/FloorsBottom" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10, 0, -4)
+
+[node name="World1_Floor1_53" parent="Background/FloorsBottom" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12, 0, 2)
+
+[node name="World1_Floor1_54" parent="Background/FloorsBottom" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12, 0, 4.76837e-07)
+
+[node name="World1_Floor1_55" parent="Background/FloorsBottom" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12, 0, -2)
+
+[node name="World1_Floor1_56" parent="Background/FloorsBottom" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12, 0, -4)
+
+[node name="World1_Floor1_57" parent="Background/FloorsBottom" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14, 0, 2)
+
+[node name="World1_Floor1_58" parent="Background/FloorsBottom" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14, 0, 4.76837e-07)
+
+[node name="World1_Floor1_59" parent="Background/FloorsBottom" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14, 0, -2)
+
+[node name="World1_Floor1_60" parent="Background/FloorsBottom" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14, 0, -4)
+
+[node name="World1_Floor1_61" parent="Background/FloorsBottom" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 16, 0, 2)
+
+[node name="World1_Floor1_62" parent="Background/FloorsBottom" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 16, 0, 4.76837e-07)
+
+[node name="World1_Floor1_63" parent="Background/FloorsBottom" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 16, 0, -2)
+
+[node name="World1_Floor1_64" parent="Background/FloorsBottom" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 16, 0, -4)
+
+[node name="World1_Floor1_65" parent="Background/FloorsBottom" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 18, 0, 2)
+
+[node name="World1_Floor1_66" parent="Background/FloorsBottom" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 18, 0, 7.15256e-07)
+
+[node name="World1_Floor1_67" parent="Background/FloorsBottom" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 18, 0, -2)
+
+[node name="World1_Floor1_68" parent="Background/FloorsBottom" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 18, 0, -4)
+
+[node name="World1_Floor1_69" parent="Background/FloorsBottom" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, -6)
+
+[node name="World1_Floor1_70" parent="Background/FloorsBottom" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0, -6)
+
+[node name="World1_Floor1_71" parent="Background/FloorsBottom" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10, 0, -6)
+
+[node name="World1_Floor1_72" parent="Background/FloorsBottom" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12, 0, -6)
+
+[node name="World1_Floor1_73" parent="Background/FloorsBottom" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14, 0, -6)
+
+[node name="World1_Floor1_74" parent="Background/FloorsBottom" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 16, 0, -6)
+
+[node name="World1_Floor1_75" parent="Background/FloorsBottom" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 18, 0, -6)
+
+[node name="World1_Floor1_76" parent="Background/FloorsBottom" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 20, 0, 2)
+
+[node name="World1_Floor1_77" parent="Background/FloorsBottom" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 20, 0, 1.66893e-06)
+
+[node name="World1_Floor1_78" parent="Background/FloorsBottom" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 20, 0, -2)
+
+[node name="World1_Floor1_79" parent="Background/FloorsBottom" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 20, 0, -4)
+
+[node name="World1_Floor1_80" parent="Background/FloorsBottom" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 22, 0, 2)
+
+[node name="World1_Floor1_81" parent="Background/FloorsBottom" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 22, 0, 1.66893e-06)
+
+[node name="World1_Floor1_82" parent="Background/FloorsBottom" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 22, 0, -2)
+
+[node name="World1_Floor1_83" parent="Background/FloorsBottom" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 22, 0, -4)
+
+[node name="World1_Floor1_84" parent="Background/FloorsBottom" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 24, 0, 2)
+
+[node name="World1_Floor1_85" parent="Background/FloorsBottom" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 24, 0, 1.90735e-06)
+
+[node name="World1_Floor1_86" parent="Background/FloorsBottom" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 24, 0, -2)
+
+[node name="World1_Floor1_87" parent="Background/FloorsBottom" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 24, 0, -4)
+
+[node name="World1_Floor1_88" parent="Background/FloorsBottom" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 26, 0, 2)
+
+[node name="World1_Floor1_89" parent="Background/FloorsBottom" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 26, 0, 1.90735e-06)
+
+[node name="World1_Floor1_90" parent="Background/FloorsBottom" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 26, 0, -2)
+
+[node name="World1_Floor1_91" parent="Background/FloorsBottom" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 26, 0, -4)
+
+[node name="World1_Floor1_92" parent="Background/FloorsBottom" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 28, 0, 2)
+
+[node name="World1_Floor1_93" parent="Background/FloorsBottom" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 28, 0, 1.66893e-06)
+
+[node name="World1_Floor1_94" parent="Background/FloorsBottom" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 28, 0, -2)
+
+[node name="World1_Floor1_95" parent="Background/FloorsBottom" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 28, 0, -4)
+
+[node name="World1_Floor1_96" parent="Background/FloorsBottom" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 30, 0, 2)
+
+[node name="World1_Floor1_97" parent="Background/FloorsBottom" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 30, 0, 1.66893e-06)
+
+[node name="World1_Floor1_98" parent="Background/FloorsBottom" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 30, 0, -2)
+
+[node name="World1_Floor1_99" parent="Background/FloorsBottom" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 30, 0, -4)
+
+[node name="World1_Floor1_100" parent="Background/FloorsBottom" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 32, 0, 2)
+
+[node name="World1_Floor1_101" parent="Background/FloorsBottom" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 32, 0, 1.90735e-06)
+
+[node name="World1_Floor1_102" parent="Background/FloorsBottom" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 32, 0, -2)
+
+[node name="World1_Floor1_103" parent="Background/FloorsBottom" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 32, 0, -4)
+
+[node name="World1_Floor1_104" parent="Background/FloorsBottom" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 34, 0, 2)
+
+[node name="World1_Floor1_105" parent="Background/FloorsBottom" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 34, 0, 2.86102e-06)
+
+[node name="World1_Floor1_106" parent="Background/FloorsBottom" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 34, 0, -2)
+
+[node name="World1_Floor1_107" parent="Background/FloorsBottom" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 34, 0, -4)
+
+[node name="World1_Floor1_108" parent="Background/FloorsBottom" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 20, 0, -6)
+
+[node name="World1_Floor1_109" parent="Background/FloorsBottom" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 22, 0, -6)
+
+[node name="World1_Floor1_110" parent="Background/FloorsBottom" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 24, 0, -6)
+
+[node name="World1_Floor1_111" parent="Background/FloorsBottom" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 26, 0, -6)
+
+[node name="World1_Floor1_112" parent="Background/FloorsBottom" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 28, 0, -6)
+
+[node name="World1_Floor1_113" parent="Background/FloorsBottom" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 30, 0, -6)
+
+[node name="World1_Floor1_114" parent="Background/FloorsBottom" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 32, 0, -6)
+
+[node name="World1_Floor1_115" parent="Background/FloorsBottom" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 34, 0, -6)
+
+[node name="World1_Floor1_116" parent="Background/FloorsBottom" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 36, 0, 2)
+
+[node name="World1_Floor1_117" parent="Background/FloorsBottom" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 36, 0, 3.09944e-06)
+
+[node name="World1_Floor1_118" parent="Background/FloorsBottom" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 36, 0, -2)
+
+[node name="World1_Floor1_119" parent="Background/FloorsBottom" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 36, 0, -4)
+
+[node name="World1_Floor1_120" parent="Background/FloorsBottom" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 38, 0, 2)
+
+[node name="World1_Floor1_121" parent="Background/FloorsBottom" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 38, 0, 3.09944e-06)
+
+[node name="World1_Floor1_122" parent="Background/FloorsBottom" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 38, 0, -2)
+
+[node name="World1_Floor1_123" parent="Background/FloorsBottom" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 38, 0, -4)
+
+[node name="World1_Floor1_144" parent="Background/FloorsBottom" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 36, 0, -6)
+
+[node name="World1_Floor1_145" parent="Background/FloorsBottom" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 38, 0, -6)
+
+[node name="World1_Floor1_124" parent="Background/FloorsBottom" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 0, -8)
+
+[node name="World1_Floor1_125" parent="Background/FloorsBottom" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 0, -10)
+
+[node name="World1_Floor1_126" parent="Background/FloorsBottom" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 0, -12)
+
+[node name="World1_Floor1_127" parent="Background/FloorsBottom" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 0, -14)
+
+[node name="World1_Floor1_128" parent="Background/FloorsBottom" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 0, -8)
+
+[node name="World1_Floor1_129" parent="Background/FloorsBottom" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 0, -10)
+
+[node name="World1_Floor1_130" parent="Background/FloorsBottom" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 0, -12)
+
+[node name="World1_Floor1_131" parent="Background/FloorsBottom" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 0, -14)
+
+[node name="World1_Floor1_132" parent="Background/FloorsBottom" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6, 0, -8)
+
+[node name="World1_Floor1_133" parent="Background/FloorsBottom" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6, 0, -10)
+
+[node name="World1_Floor1_134" parent="Background/FloorsBottom" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6, 0, -12)
+
+[node name="World1_Floor1_135" parent="Background/FloorsBottom" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6, 0, -14)
+
+[node name="World1_Floor1_136" parent="Background/FloorsBottom" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 0, -8)
+
+[node name="World1_Floor1_137" parent="Background/FloorsBottom" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 0, -10)
+
+[node name="World1_Floor1_138" parent="Background/FloorsBottom" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 0, -12)
+
+[node name="World1_Floor1_139" parent="Background/FloorsBottom" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.99999, 0, -14)
+
+[node name="World1_Floor1_140" parent="Background/FloorsBottom" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, -8)
+
+[node name="World1_Floor1_141" parent="Background/FloorsBottom" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, -10)
+
+[node name="World1_Floor1_142" parent="Background/FloorsBottom" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, -12)
+
+[node name="World1_Floor1_143" parent="Background/FloorsBottom" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.99999, 0, -14)
+
+[node name="World1_Floor1_146" parent="Background/FloorsBottom" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.8147e-06, 0, -8)
+
+[node name="World1_Floor1_147" parent="Background/FloorsBottom" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.8147e-06, 0, -10)
+
+[node name="World1_Floor1_148" parent="Background/FloorsBottom" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.90735e-06, 0, -12)
+
+[node name="World1_Floor1_149" parent="Background/FloorsBottom" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.72205e-06, 0, -14)
+
+[node name="World1_Floor1_150" parent="Background/FloorsBottom" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, -8)
+
+[node name="World1_Floor1_151" parent="Background/FloorsBottom" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, -10)
+
+[node name="World1_Floor1_152" parent="Background/FloorsBottom" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, -12)
+
+[node name="World1_Floor1_153" parent="Background/FloorsBottom" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.00001, 0, -14)
+
+[node name="World1_Floor1_154" parent="Background/FloorsBottom" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, -8)
+
+[node name="World1_Floor1_155" parent="Background/FloorsBottom" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, -10)
+
+[node name="World1_Floor1_156" parent="Background/FloorsBottom" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, -12)
+
+[node name="World1_Floor1_157" parent="Background/FloorsBottom" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, -14)
+
+[node name="World1_Floor1_158" parent="Background/FloorsBottom" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 0, -16)
+
+[node name="World1_Floor1_159" parent="Background/FloorsBottom" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 0, -16)
+
+[node name="World1_Floor1_160" parent="Background/FloorsBottom" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6, 0, -16)
+
+[node name="World1_Floor1_161" parent="Background/FloorsBottom" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 0, -16)
+
+[node name="World1_Floor1_162" parent="Background/FloorsBottom" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, -16)
+
+[node name="World1_Floor1_163" parent="Background/FloorsBottom" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.90735e-06, 0, -16)
+
+[node name="World1_Floor1_164" parent="Background/FloorsBottom" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, -16)
+
+[node name="World1_Floor1_165" parent="Background/FloorsBottom" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, -16)
+
+[node name="World1_Floor1_166" parent="Background/FloorsBottom" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, -8)
+
+[node name="World1_Floor1_167" parent="Background/FloorsBottom" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, -10)
+
+[node name="World1_Floor1_168" parent="Background/FloorsBottom" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, -12)
+
+[node name="World1_Floor1_169" parent="Background/FloorsBottom" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, -14)
+
+[node name="World1_Floor1_170" parent="Background/FloorsBottom" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0, -8)
+
+[node name="World1_Floor1_171" parent="Background/FloorsBottom" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0, -10)
+
+[node name="World1_Floor1_172" parent="Background/FloorsBottom" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0, -12)
+
+[node name="World1_Floor1_173" parent="Background/FloorsBottom" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0, -14)
+
+[node name="World1_Floor1_174" parent="Background/FloorsBottom" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10, 0, -8)
+
+[node name="World1_Floor1_175" parent="Background/FloorsBottom" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10, 0, -10)
+
+[node name="World1_Floor1_176" parent="Background/FloorsBottom" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10, 0, -12)
+
+[node name="World1_Floor1_177" parent="Background/FloorsBottom" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10, 0, -14)
+
+[node name="World1_Floor1_178" parent="Background/FloorsBottom" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12, 0, -8)
+
+[node name="World1_Floor1_179" parent="Background/FloorsBottom" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12, 0, -10)
+
+[node name="World1_Floor1_180" parent="Background/FloorsBottom" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12, 0, -12)
+
+[node name="World1_Floor1_181" parent="Background/FloorsBottom" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12, 0, -14)
+
+[node name="World1_Floor1_182" parent="Background/FloorsBottom" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14, 0, -8)
+
+[node name="World1_Floor1_183" parent="Background/FloorsBottom" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14, 0, -10)
+
+[node name="World1_Floor1_184" parent="Background/FloorsBottom" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14, 0, -12)
+
+[node name="World1_Floor1_185" parent="Background/FloorsBottom" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14, 0, -14)
+
+[node name="World1_Floor1_186" parent="Background/FloorsBottom" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 16, 0, -8)
+
+[node name="World1_Floor1_187" parent="Background/FloorsBottom" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 16, 0, -10)
+
+[node name="World1_Floor1_188" parent="Background/FloorsBottom" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 16, 0, -12)
+
+[node name="World1_Floor1_189" parent="Background/FloorsBottom" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 16, 0, -14)
+
+[node name="World1_Floor1_190" parent="Background/FloorsBottom" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 18, 0, -8)
+
+[node name="World1_Floor1_191" parent="Background/FloorsBottom" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 18, 0, -10)
+
+[node name="World1_Floor1_192" parent="Background/FloorsBottom" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 18, 0, -12)
+
+[node name="World1_Floor1_193" parent="Background/FloorsBottom" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 18, 0, -14)
+
+[node name="World1_Floor1_194" parent="Background/FloorsBottom" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, -16)
+
+[node name="World1_Floor1_195" parent="Background/FloorsBottom" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0, -16)
+
+[node name="World1_Floor1_196" parent="Background/FloorsBottom" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10, 0, -16)
+
+[node name="World1_Floor1_197" parent="Background/FloorsBottom" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12, 0, -16)
+
+[node name="World1_Floor1_198" parent="Background/FloorsBottom" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14, 0, -16)
+
+[node name="World1_Floor1_199" parent="Background/FloorsBottom" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 16, 0, -16)
+
+[node name="World1_Floor1_200" parent="Background/FloorsBottom" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 18, 0, -16)
+
+[node name="World1_Floor1_201" parent="Background/FloorsBottom" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 20, 0, -8)
+
+[node name="World1_Floor1_202" parent="Background/FloorsBottom" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 20, 0, -10)
+
+[node name="World1_Floor1_203" parent="Background/FloorsBottom" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 20, 0, -12)
+
+[node name="World1_Floor1_204" parent="Background/FloorsBottom" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 20, 0, -14)
+
+[node name="World1_Floor1_205" parent="Background/FloorsBottom" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 22, 0, -8)
+
+[node name="World1_Floor1_206" parent="Background/FloorsBottom" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 22, 0, -10)
+
+[node name="World1_Floor1_207" parent="Background/FloorsBottom" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 22, 0, -12)
+
+[node name="World1_Floor1_208" parent="Background/FloorsBottom" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 22, 0, -14)
+
+[node name="World1_Floor1_209" parent="Background/FloorsBottom" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 24, 0, -8)
+
+[node name="World1_Floor1_210" parent="Background/FloorsBottom" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 24, 0, -10)
+
+[node name="World1_Floor1_211" parent="Background/FloorsBottom" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 24, 0, -12)
+
+[node name="World1_Floor1_212" parent="Background/FloorsBottom" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 24, 0, -14)
+
+[node name="World1_Floor1_213" parent="Background/FloorsBottom" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 26, 0, -8)
+
+[node name="World1_Floor1_214" parent="Background/FloorsBottom" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 26, 0, -10)
+
+[node name="World1_Floor1_215" parent="Background/FloorsBottom" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 26, 0, -12)
+
+[node name="World1_Floor1_216" parent="Background/FloorsBottom" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 26, 0, -14)
+
+[node name="World1_Floor1_217" parent="Background/FloorsBottom" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 28, 0, -8)
+
+[node name="World1_Floor1_218" parent="Background/FloorsBottom" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 28, 0, -10)
+
+[node name="World1_Floor1_219" parent="Background/FloorsBottom" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 28, 0, -12)
+
+[node name="World1_Floor1_220" parent="Background/FloorsBottom" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 28, 0, -14)
+
+[node name="World1_Floor1_221" parent="Background/FloorsBottom" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 30, 0, -8)
+
+[node name="World1_Floor1_222" parent="Background/FloorsBottom" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 30, 0, -10)
+
+[node name="World1_Floor1_223" parent="Background/FloorsBottom" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 30, 0, -12)
+
+[node name="World1_Floor1_224" parent="Background/FloorsBottom" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 30, 0, -14)
+
+[node name="World1_Floor1_225" parent="Background/FloorsBottom" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 32, 0, -8)
+
+[node name="World1_Floor1_226" parent="Background/FloorsBottom" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 32, 0, -10)
+
+[node name="World1_Floor1_227" parent="Background/FloorsBottom" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 32, 0, -12)
+
+[node name="World1_Floor1_228" parent="Background/FloorsBottom" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 32, 0, -14)
+
+[node name="World1_Floor1_229" parent="Background/FloorsBottom" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 34, 0, -8)
+
+[node name="World1_Floor1_230" parent="Background/FloorsBottom" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 34, 0, -10)
+
+[node name="World1_Floor1_231" parent="Background/FloorsBottom" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 34, 0, -12)
+
+[node name="World1_Floor1_232" parent="Background/FloorsBottom" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 34, 0, -14)
+
+[node name="World1_Floor1_233" parent="Background/FloorsBottom" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 20, 0, -16)
+
+[node name="World1_Floor1_234" parent="Background/FloorsBottom" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 22, 0, -16)
+
+[node name="World1_Floor1_235" parent="Background/FloorsBottom" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 24, 0, -16)
+
+[node name="World1_Floor1_236" parent="Background/FloorsBottom" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 26, 0, -16)
+
+[node name="World1_Floor1_237" parent="Background/FloorsBottom" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 28, 0, -16)
+
+[node name="World1_Floor1_238" parent="Background/FloorsBottom" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 30, 0, -16)
+
+[node name="World1_Floor1_239" parent="Background/FloorsBottom" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 32, 0, -16)
+
+[node name="World1_Floor1_240" parent="Background/FloorsBottom" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 34, 0, -16)
+
+[node name="World1_Floor1_241" parent="Background/FloorsBottom" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 36, 0, -8)
+
+[node name="World1_Floor1_242" parent="Background/FloorsBottom" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 36, 0, -10)
+
+[node name="World1_Floor1_243" parent="Background/FloorsBottom" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 36, 0, -12)
+
+[node name="World1_Floor1_244" parent="Background/FloorsBottom" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 36, 0, -14)
+
+[node name="World1_Floor1_245" parent="Background/FloorsBottom" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 38, 0, -8)
+
+[node name="World1_Floor1_246" parent="Background/FloorsBottom" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 38, 0, -10)
+
+[node name="World1_Floor1_247" parent="Background/FloorsBottom" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 38, 0, -12)
+
+[node name="World1_Floor1_248" parent="Background/FloorsBottom" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 38, 0, -14)
+
+[node name="World1_Floor1_249" parent="Background/FloorsBottom" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 36, 0, -16)
+
+[node name="World1_Floor1_250" parent="Background/FloorsBottom" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 38, 0, -16)
+
+[node name="FloorsLeft" type="Node3D" parent="Background"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, -3)
+
+[node name="World1_Floor1_1" parent="Background/FloorsLeft" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 2)
+
+[node name="World1_Floor1_2" parent="Background/FloorsLeft" instance=ExtResource("2_uiv8n")]
+
+[node name="World1_Floor1_3" parent="Background/FloorsLeft" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -2)
+
+[node name="World1_Floor1_4" parent="Background/FloorsLeft" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -4)
+
+[node name="World1_Floor1_5" parent="Background/FloorsLeft" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 2)
+
+[node name="World1_Floor1_6" parent="Background/FloorsLeft" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 0)
+
+[node name="World1_Floor1_7" parent="Background/FloorsLeft" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, -2)
+
+[node name="World1_Floor1_8" parent="Background/FloorsLeft" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, -4)
+
+[node name="World1_Floor1_9" parent="Background/FloorsLeft" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 2)
+
+[node name="World1_Floor1_10" parent="Background/FloorsLeft" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 0)
+
+[node name="World1_Floor1_11" parent="Background/FloorsLeft" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, -2)
+
+[node name="World1_Floor1_12" parent="Background/FloorsLeft" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, -4)
+
+[node name="World1_Floor1_13" parent="Background/FloorsLeft" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, 2)
+
+[node name="World1_Floor1_14" parent="Background/FloorsLeft" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, 0)
+
+[node name="World1_Floor1_15" parent="Background/FloorsLeft" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, -2)
+
+[node name="World1_Floor1_16" parent="Background/FloorsLeft" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, -4)
+
+[node name="World1_Floor1_17" parent="Background/FloorsLeft" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0, 2)
+
+[node name="World1_Floor1_18" parent="Background/FloorsLeft" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0, 0)
+
+[node name="World1_Floor1_19" parent="Background/FloorsLeft" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0, -2)
+
+[node name="World1_Floor1_20" parent="Background/FloorsLeft" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0, -4)
+
+[node name="World1_Floor1_21" parent="Background/FloorsLeft" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10, 0, 2)
+
+[node name="World1_Floor1_22" parent="Background/FloorsLeft" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10, 0, 0)
+
+[node name="World1_Floor1_23" parent="Background/FloorsLeft" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10, 0, -2)
+
+[node name="World1_Floor1_24" parent="Background/FloorsLeft" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10, 0, -4)
+
+[node name="World1_Floor1_25" parent="Background/FloorsLeft" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12, 0, 2)
+
+[node name="World1_Floor1_26" parent="Background/FloorsLeft" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12, 0, 0)
+
+[node name="World1_Floor1_27" parent="Background/FloorsLeft" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12, 0, -2)
+
+[node name="World1_Floor1_28" parent="Background/FloorsLeft" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12, 0, -4)
+
+[node name="World1_Floor1_29" parent="Background/FloorsLeft" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14, 0, 2)
+
+[node name="World1_Floor1_30" parent="Background/FloorsLeft" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14, 0, 0)
+
+[node name="World1_Floor1_31" parent="Background/FloorsLeft" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14, 0, -2)
+
+[node name="World1_Floor1_32" parent="Background/FloorsLeft" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14, 0, -4)
+
+[node name="World1_Floor1_33" parent="Background/FloorsLeft" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -6)
+
+[node name="World1_Floor1_34" parent="Background/FloorsLeft" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, -6)
+
+[node name="World1_Floor1_35" parent="Background/FloorsLeft" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, -6)
+
+[node name="World1_Floor1_36" parent="Background/FloorsLeft" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, -6)
+
+[node name="World1_Floor1_37" parent="Background/FloorsLeft" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0, -6)
+
+[node name="World1_Floor1_38" parent="Background/FloorsLeft" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10, 0, -6)
+
+[node name="World1_Floor1_39" parent="Background/FloorsLeft" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12, 0, -6)
+
+[node name="World1_Floor1_40" parent="Background/FloorsLeft" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14, 0, -6)
+
+[node name="World1_Floor1_41" parent="Background/FloorsLeft" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.76837e-07, 0, -8)
+
+[node name="World1_Floor1_42" parent="Background/FloorsLeft" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.76837e-07, 0, -10)
+
+[node name="World1_Floor1_43" parent="Background/FloorsLeft" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.96046e-07, 0, -12)
+
+[node name="World1_Floor1_44" parent="Background/FloorsLeft" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.76837e-07, 0, -14)
+
+[node name="World1_Floor1_45" parent="Background/FloorsLeft" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, -8)
+
+[node name="World1_Floor1_46" parent="Background/FloorsLeft" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, -10)
+
+[node name="World1_Floor1_47" parent="Background/FloorsLeft" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, -12)
+
+[node name="World1_Floor1_48" parent="Background/FloorsLeft" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, -14)
+
+[node name="World1_Floor1_49" parent="Background/FloorsLeft" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, -8)
+
+[node name="World1_Floor1_50" parent="Background/FloorsLeft" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, -10)
+
+[node name="World1_Floor1_51" parent="Background/FloorsLeft" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, -12)
+
+[node name="World1_Floor1_52" parent="Background/FloorsLeft" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, -14)
+
+[node name="World1_Floor1_53" parent="Background/FloorsLeft" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, -8)
+
+[node name="World1_Floor1_54" parent="Background/FloorsLeft" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, -10)
+
+[node name="World1_Floor1_55" parent="Background/FloorsLeft" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, -12)
+
+[node name="World1_Floor1_56" parent="Background/FloorsLeft" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, -14)
+
+[node name="World1_Floor1_57" parent="Background/FloorsLeft" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0, -8)
+
+[node name="World1_Floor1_58" parent="Background/FloorsLeft" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0, -10)
+
+[node name="World1_Floor1_59" parent="Background/FloorsLeft" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0, -12)
+
+[node name="World1_Floor1_60" parent="Background/FloorsLeft" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0, -14)
+
+[node name="World1_Floor1_61" parent="Background/FloorsLeft" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10, 0, -8)
+
+[node name="World1_Floor1_62" parent="Background/FloorsLeft" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10, 0, -10)
+
+[node name="World1_Floor1_63" parent="Background/FloorsLeft" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10, 0, -12)
+
+[node name="World1_Floor1_64" parent="Background/FloorsLeft" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10, 0, -14)
+
+[node name="World1_Floor1_65" parent="Background/FloorsLeft" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12, 0, -8)
+
+[node name="World1_Floor1_66" parent="Background/FloorsLeft" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12, 0, -10)
+
+[node name="World1_Floor1_67" parent="Background/FloorsLeft" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12, 0, -12)
+
+[node name="World1_Floor1_68" parent="Background/FloorsLeft" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12, 0, -14)
+
+[node name="World1_Floor1_69" parent="Background/FloorsLeft" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14, 0, -8)
+
+[node name="World1_Floor1_70" parent="Background/FloorsLeft" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14, 0, -10)
+
+[node name="World1_Floor1_71" parent="Background/FloorsLeft" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14, 0, -12)
+
+[node name="World1_Floor1_72" parent="Background/FloorsLeft" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14, 0, -14)
+
+[node name="World1_Floor1_73" parent="Background/FloorsLeft" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.76837e-07, 0, -16)
+
+[node name="World1_Floor1_74" parent="Background/FloorsLeft" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, -16)
+
+[node name="World1_Floor1_75" parent="Background/FloorsLeft" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, -16)
+
+[node name="World1_Floor1_76" parent="Background/FloorsLeft" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, -16)
+
+[node name="World1_Floor1_77" parent="Background/FloorsLeft" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0, -16)
+
+[node name="World1_Floor1_78" parent="Background/FloorsLeft" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10, 0, -16)
+
+[node name="World1_Floor1_79" parent="Background/FloorsLeft" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12, 0, -16)
+
+[node name="World1_Floor1_80" parent="Background/FloorsLeft" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14, 0, -16)
+
+[node name="FloorsRight" type="Node3D" parent="Background"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 17)
+
+[node name="World1_Floor1_1" parent="Background/FloorsRight" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 2)
+
+[node name="World1_Floor1_2" parent="Background/FloorsRight" instance=ExtResource("2_uiv8n")]
+
+[node name="World1_Floor1_3" parent="Background/FloorsRight" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -2)
+
+[node name="World1_Floor1_4" parent="Background/FloorsRight" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -4)
+
+[node name="World1_Floor1_5" parent="Background/FloorsRight" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 2)
+
+[node name="World1_Floor1_6" parent="Background/FloorsRight" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 0)
+
+[node name="World1_Floor1_7" parent="Background/FloorsRight" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, -2)
+
+[node name="World1_Floor1_8" parent="Background/FloorsRight" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, -4)
+
+[node name="World1_Floor1_9" parent="Background/FloorsRight" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 2)
+
+[node name="World1_Floor1_10" parent="Background/FloorsRight" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 0)
+
+[node name="World1_Floor1_11" parent="Background/FloorsRight" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, -2)
+
+[node name="World1_Floor1_12" parent="Background/FloorsRight" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, -4)
+
+[node name="World1_Floor1_13" parent="Background/FloorsRight" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, 2)
+
+[node name="World1_Floor1_14" parent="Background/FloorsRight" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, 0)
+
+[node name="World1_Floor1_15" parent="Background/FloorsRight" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, -2)
+
+[node name="World1_Floor1_16" parent="Background/FloorsRight" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, -4)
+
+[node name="World1_Floor1_17" parent="Background/FloorsRight" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0, 2)
+
+[node name="World1_Floor1_18" parent="Background/FloorsRight" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0, 0)
+
+[node name="World1_Floor1_19" parent="Background/FloorsRight" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0, -2)
+
+[node name="World1_Floor1_20" parent="Background/FloorsRight" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0, -4)
+
+[node name="World1_Floor1_21" parent="Background/FloorsRight" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10, 0, 2)
+
+[node name="World1_Floor1_22" parent="Background/FloorsRight" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10, 0, 0)
+
+[node name="World1_Floor1_23" parent="Background/FloorsRight" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10, 0, -2)
+
+[node name="World1_Floor1_24" parent="Background/FloorsRight" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10, 0, -4)
+
+[node name="World1_Floor1_25" parent="Background/FloorsRight" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12, 0, 2)
+
+[node name="World1_Floor1_26" parent="Background/FloorsRight" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12, 0, 0)
+
+[node name="World1_Floor1_27" parent="Background/FloorsRight" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12, 0, -2)
+
+[node name="World1_Floor1_28" parent="Background/FloorsRight" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12, 0, -4)
+
+[node name="World1_Floor1_29" parent="Background/FloorsRight" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14, 0, 2)
+
+[node name="World1_Floor1_30" parent="Background/FloorsRight" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14, 0, 0)
+
+[node name="World1_Floor1_31" parent="Background/FloorsRight" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14, 0, -2)
+
+[node name="World1_Floor1_32" parent="Background/FloorsRight" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14, 0, -4)
+
+[node name="World1_Floor1_33" parent="Background/FloorsRight" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -6)
+
+[node name="World1_Floor1_34" parent="Background/FloorsRight" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, -6)
+
+[node name="World1_Floor1_35" parent="Background/FloorsRight" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, -6)
+
+[node name="World1_Floor1_36" parent="Background/FloorsRight" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, -6)
+
+[node name="World1_Floor1_37" parent="Background/FloorsRight" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0, -6)
+
+[node name="World1_Floor1_38" parent="Background/FloorsRight" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10, 0, -6)
+
+[node name="World1_Floor1_39" parent="Background/FloorsRight" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12, 0, -6)
+
+[node name="World1_Floor1_40" parent="Background/FloorsRight" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14, 0, -6)
+
+[node name="World1_Floor1_41" parent="Background/FloorsRight" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.17233e-07, 0, 12)
+
+[node name="World1_Floor1_42" parent="Background/FloorsRight" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.76837e-07, 0, 10)
+
+[node name="World1_Floor1_43" parent="Background/FloorsRight" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.76837e-07, 0, 8)
+
+[node name="World1_Floor1_44" parent="Background/FloorsRight" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.17233e-07, 0, 6)
+
+[node name="World1_Floor1_45" parent="Background/FloorsRight" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 12)
+
+[node name="World1_Floor1_46" parent="Background/FloorsRight" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 10)
+
+[node name="World1_Floor1_47" parent="Background/FloorsRight" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 8)
+
+[node name="World1_Floor1_48" parent="Background/FloorsRight" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 6)
+
+[node name="World1_Floor1_49" parent="Background/FloorsRight" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 12)
+
+[node name="World1_Floor1_50" parent="Background/FloorsRight" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 10)
+
+[node name="World1_Floor1_51" parent="Background/FloorsRight" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 8)
+
+[node name="World1_Floor1_52" parent="Background/FloorsRight" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 6)
+
+[node name="World1_Floor1_53" parent="Background/FloorsRight" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, 12)
+
+[node name="World1_Floor1_54" parent="Background/FloorsRight" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, 10)
+
+[node name="World1_Floor1_55" parent="Background/FloorsRight" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, 8)
+
+[node name="World1_Floor1_56" parent="Background/FloorsRight" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, 6)
+
+[node name="World1_Floor1_57" parent="Background/FloorsRight" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0, 12)
+
+[node name="World1_Floor1_58" parent="Background/FloorsRight" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0, 10)
+
+[node name="World1_Floor1_59" parent="Background/FloorsRight" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0, 8)
+
+[node name="World1_Floor1_60" parent="Background/FloorsRight" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0, 6)
+
+[node name="World1_Floor1_61" parent="Background/FloorsRight" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10, 0, 12)
+
+[node name="World1_Floor1_62" parent="Background/FloorsRight" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10, 0, 10)
+
+[node name="World1_Floor1_63" parent="Background/FloorsRight" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10, 0, 8)
+
+[node name="World1_Floor1_64" parent="Background/FloorsRight" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10, 0, 6)
+
+[node name="World1_Floor1_65" parent="Background/FloorsRight" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12, 0, 12)
+
+[node name="World1_Floor1_66" parent="Background/FloorsRight" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12, 0, 10)
+
+[node name="World1_Floor1_67" parent="Background/FloorsRight" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12, 0, 8)
+
+[node name="World1_Floor1_68" parent="Background/FloorsRight" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12, 0, 6)
+
+[node name="World1_Floor1_69" parent="Background/FloorsRight" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14, 0, 12)
+
+[node name="World1_Floor1_70" parent="Background/FloorsRight" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14, 0, 10)
+
+[node name="World1_Floor1_71" parent="Background/FloorsRight" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14, 0, 8)
+
+[node name="World1_Floor1_72" parent="Background/FloorsRight" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14, 0, 6)
+
+[node name="World1_Floor1_73" parent="Background/FloorsRight" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.17233e-07, 0, 4)
+
+[node name="World1_Floor1_74" parent="Background/FloorsRight" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 4)
+
+[node name="World1_Floor1_75" parent="Background/FloorsRight" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 4)
+
+[node name="World1_Floor1_76" parent="Background/FloorsRight" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, 4)
+
+[node name="World1_Floor1_77" parent="Background/FloorsRight" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0, 4)
+
+[node name="World1_Floor1_78" parent="Background/FloorsRight" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10, 0, 4)
+
+[node name="World1_Floor1_79" parent="Background/FloorsRight" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12, 0, 4)
+
+[node name="World1_Floor1_80" parent="Background/FloorsRight" instance=ExtResource("2_uiv8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14, 0, 4)

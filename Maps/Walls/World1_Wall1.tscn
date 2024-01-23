@@ -1,10 +1,10 @@
 [gd_scene load_steps=3 format=3 uid="uid://chhrnekvmqraw"]
 
 [sub_resource type="BoxMesh" id="BoxMesh_kvxwc"]
-size = Vector3(2, 2, 0.1)
+size = Vector3(2, 2, 0.2)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_6o3ai"]
-size = Vector3(2, 2, 0.1)
+size = Vector3(2, 2, 0.2)
 
 [node name="World1_Wall1" type="Node3D"]
 
@@ -15,7 +15,6 @@ collision_mask = 3
 [node name="MeshInstance3D" type="MeshInstance3D" parent="StaticBody3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
 mesh = SubResource("BoxMesh_kvxwc")
-metadata/_edit_lock_ = true
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)

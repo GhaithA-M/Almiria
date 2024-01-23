@@ -1,9 +1,17 @@
 extends CharacterBody3D
 
 const SPEED = 2
+const SPRINT_MULTIPLIER = 2 # Multiplier for sprinting speed
 var gravity = ProjectSettings.get_setting("physics/3d/default_gravity")
 var local_velocity = Vector3.ZERO
 var offset: Vector3 = Vector3(0, 0, 0)
+
+# Bullets
+var bullet = load("res://Entities/WeaponProjectile1.tscn")
+var instance
+
+@onready var gun_anim = $FullAuto1/AnimationPlayer
+@onready var gun_barrel = $FullAuto1/RayCast3D
 
 func _physics_process(delta):
 	local_velocity = velocity
@@ -14,17 +22,31 @@ func _physics_process(delta):
 	var input_dir = Vector2(Input.get_action_strength("ui_right") - Input.get_action_strength("ui_left"),
 							Input.get_action_strength("ui_up") - Input.get_action_strength("ui_down"))
 	var direction = Vector3(input_dir.x, 0, -input_dir.y)
-
+	var current_speed = SPEED
+	
+		# Check if shift key is pressed for sprinting
+	if Input.is_key_pressed(KEY_SHIFT):
+		current_speed *= SPRINT_MULTIPLIER
+	
 	if direction != Vector3.ZERO:
-		local_velocity.x = direction.x * SPEED
-		local_velocity.z = direction.z * SPEED
+		local_velocity.x = direction.x * current_speed
+		local_velocity.z = direction.z * current_speed
 	else:
-		# Multiply by 10 for deceleration, higher number reduces slide
-		local_velocity.x = lerp(local_velocity.x, 0.0, (SPEED * delta * 10))
-		local_velocity.z = lerp(local_velocity.z, 0.0, (SPEED * delta * 10))
+		# Multiply by variable (3) for deceleration, higher number reduces slide
+		local_velocity.x = lerp(local_velocity.x, 0.0, (SPEED * delta * 3))
+		local_velocity.z = lerp(local_velocity.z, 0.0, (SPEED * delta * 3))
 
 	self.velocity = local_velocity
 	move_and_slide()
+	
+# Shooting
+	if Input.is_action_pressed("shoot"):
+		if !gun_anim.is_playing():
+			gun_anim.play("Shoot")
+			instance = bullet.instantiate()
+			instance.position = gun_barrel.global_position
+			instance.transform.basis = gun_barrel.global_transform.basis
+			get_parent().add_child(instance)
 	
 	var target_position = ScreenPointToRay()
 	if target_position != Vector3.ZERO:
