@@ -10,8 +10,8 @@ var offset: Vector3 = Vector3(0, 0, 0)
 var bullet = load("res://Entities/WeaponProjectile1.tscn")
 var instance
 
-@onready var gun_anim = $FullAuto1/AnimationPlayer
-@onready var gun_barrel = $FullAuto1/RayCast3D
+@onready var gun_anim = $FullAutoRifle1/AnimationPlayer
+@onready var gun_barrel = $FullAutoRifle1/RayCast3D
 
 func _physics_process(delta):
 	local_velocity = velocity

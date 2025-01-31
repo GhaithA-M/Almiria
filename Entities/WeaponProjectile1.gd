@@ -1,6 +1,6 @@
 extends Node3D
 
-const SPEED = 10.0
+const SPEED = 25.0
 
 @onready var mesh = $MeshInstance3D
 @onready var ray = $RayCast3D
@@ -19,7 +19,7 @@ func _process(delta):
 		ray.enabled = false
 		if ray.get_collider().is_in_group("enemy"):
 			ray.get_collider().hit()
-		await get_tree().create_timer(1.0).timeout
+		await get_tree().create_timer(0.10).timeout # Seconds to show impact particle
 		queue_free()
 
 func _on_timer_timeout():

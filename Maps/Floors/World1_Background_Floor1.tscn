@@ -6,7 +6,7 @@ size = Vector3(2, 0.1, 2)
 [sub_resource type="BoxShape3D" id="BoxShape3D_es0mk"]
 size = Vector3(2, 0.1, 2)
 
-[node name="DesertTile1" type="Node3D"]
+[node name="World1_Background_Floor1" type="Node3D"]
 
 [node name="StaticBody3D" type="StaticBody3D" parent="."]
 collision_layer = 3
