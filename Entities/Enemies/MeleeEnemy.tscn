@@ -1,0 +1,30 @@
+[gd_scene load_steps=5 format=3 uid="uid://t1huqq1v00h6"]
+
+[ext_resource type="Script" path="res://Entities/Enemies/MeleeEnemy.gd" id="1_kk2i7"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_dlcud"]
+size = Vector3(1, 0.189575, 1)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_7pogb"]
+size = Vector3(1, 2, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_ejdbd"]
+size = Vector3(1, 2, 1)
+
+[node name="MeleeEnemy" type="CharacterBody3D"]
+script = ExtResource("1_kk2i7")
+
+[node name="Area3D" type="Area3D" parent="."]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.405212, 0)
+shape = SubResource("BoxShape3D_dlcud")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("BoxShape3D_7pogb")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+mesh = SubResource("BoxMesh_ejdbd")
+
+[node name="NavigationAgent3D" type="NavigationAgent3D" parent="."]
+debug_enabled = true

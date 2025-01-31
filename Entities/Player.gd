@@ -78,3 +78,6 @@ func ScreenPointToRay():
 		return rayArray["position"]
 	# If the ray intersection query did not hit anything, return a zero vector
 	return Vector3()
+
+func _ready():
+	add_to_group("player")

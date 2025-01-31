@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://cywr5vnm2ud56"]
+
+[ext_resource type="Script" path="res://Entities/Enemies/BaseEnemy.gd" id="1_8qnkn"]
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_gyhkw"]
+
+[node name="BaseEnemy" type="CharacterBody3D"]
+script = ExtResource("1_8qnkn")
+
+[node name="NavigationAgent3D" type="NavigationAgent3D" parent="."]
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("CylinderShape3D_gyhkw")

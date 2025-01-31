@@ -1,9 +1,10 @@
-[gd_scene load_steps=5 format=3 uid="uid://knmtwmx8obbn"]
+[gd_scene load_steps=6 format=3 uid="uid://knmtwmx8obbn"]
 
 [ext_resource type="PackedScene" uid="uid://drddbewp1vrvh" path="res://Maps/World1/World1_Level1.tscn" id="1_ma3ej"]
 [ext_resource type="PackedScene" uid="uid://crv0ggn8hmrto" path="res://Entities/Player.tscn" id="1_plohb"]
 [ext_resource type="PackedScene" uid="uid://dwg3327op3v8c" path="res://Entities/Camera.tscn" id="2_5rw44"]
 [ext_resource type="PackedScene" uid="uid://bbvw681yvkiqo" path="res://Entities/Weapons/FullAutoRifle1.tscn" id="3_gwb3g"]
+[ext_resource type="PackedScene" uid="uid://t1huqq1v00h6" path="res://Entities/Enemies/MeleeEnemy.tscn" id="5_57mms"]
 
 [node name="Game" type="Node3D"]
 
@@ -19,3 +20,6 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.5, -0.690117)
 transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 15, 0)
 far = 50.0
 camera_point = NodePath("../Player")
+
+[node name="MeleeEnemy" parent="." instance=ExtResource("5_57mms")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9, 3.2, -4.3)
