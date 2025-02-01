@@ -27,4 +27,3 @@ shape = SubResource("BoxShape3D_7pogb")
 mesh = SubResource("BoxMesh_ejdbd")
 
 [node name="NavigationAgent3D" type="NavigationAgent3D" parent="."]
-debug_enabled = true

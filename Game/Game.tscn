@@ -1,5 +1,6 @@
-[gd_scene load_steps=6 format=3 uid="uid://knmtwmx8obbn"]
+[gd_scene load_steps=7 format=3 uid="uid://knmtwmx8obbn"]
 
+[ext_resource type="PackedScene" uid="uid://d2bqiibbykx53" path="res://Assets/GridMaps/Dungeon_GridMap.tscn" id="1_aoj0m"]
 [ext_resource type="PackedScene" uid="uid://drddbewp1vrvh" path="res://Maps/World1/World1_Level1.tscn" id="1_ma3ej"]
 [ext_resource type="PackedScene" uid="uid://crv0ggn8hmrto" path="res://Entities/Player.tscn" id="1_plohb"]
 [ext_resource type="PackedScene" uid="uid://dwg3327op3v8c" path="res://Entities/Camera.tscn" id="2_5rw44"]
@@ -7,6 +8,8 @@
 [ext_resource type="PackedScene" uid="uid://t1huqq1v00h6" path="res://Entities/Enemies/MeleeEnemy.tscn" id="5_57mms"]
 
 [node name="Game" type="Node3D"]
+
+[node name="DungeonGridMap" parent="." instance=ExtResource("1_aoj0m")]
 
 [node name="World1_Level1" parent="." instance=ExtResource("1_ma3ej")]
 

@@ -1,4 +1,4 @@
-[gd_scene load_steps=5 format=3 uid="uid://bvyis4717r2k6"]
+[gd_scene load_steps=4 format=3 uid="uid://bvyis4717r2k6"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_1txdh"]
 albedo_color = Color(0, 0.196078, 0.196078, 1)
@@ -10,10 +10,7 @@ size = Vector3(2, 0.1, 2)
 [sub_resource type="BoxShape3D" id="BoxShape3D_es0mk"]
 size = Vector3(2, 0.1, 2)
 
-[sub_resource type="NavigationMesh" id="NavigationMesh_3cmgv"]
-cell_size = 0.5
-
-[node name="DesertTile1" type="Node3D"]
+[node name="World1_Floor1" type="Node3D"]
 
 [node name="StaticBody3D" type="StaticBody3D" parent="."]
 collision_layer = 3
@@ -24,7 +21,3 @@ mesh = SubResource("BoxMesh_6dhkr")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D"]
 shape = SubResource("BoxShape3D_es0mk")
-
-[node name="NavigationRegion3D" type="NavigationRegion3D" parent="StaticBody3D"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.1, 0)
-navigation_mesh = SubResource("NavigationMesh_3cmgv")

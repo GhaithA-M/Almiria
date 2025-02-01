@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=3 uid="uid://d2bqiibbykx53"]
+
+[sub_resource type="MeshLibrary" id="MeshLibrary_inul1"]
+
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_nkf36"]
+
+[node name="DungeonGridMap" type="Node"]
+
+[node name="GridMap" type="GridMap" parent="."]
+mesh_library = SubResource("MeshLibrary_inul1")
+physics_material = SubResource("PhysicsMaterial_nkf36")

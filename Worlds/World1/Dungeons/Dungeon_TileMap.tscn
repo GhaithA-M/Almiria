@@ -1,0 +1,45 @@
+[gd_scene load_steps=2 format=3 uid="uid://6qbvnjcricej"]
+
+[sub_resource type="GDScript" id="GDScript_q85p5"]
+script/source = "extends Node3D
+
+@export var tile_size: int = 4
+@export var dungeon_width: int = 10
+@export var dungeon_height: int = 10
+
+var floor_tile = preload(\"res://Assets/ModularTiles/Floor_Stone.tscn\")
+var wall_tile = preload(\"res://Assets/ModularTiles/Wall_Brick.tscn\")
+var entrance_tile = preload(\"res://Assets/ModularTiles/Entrance.tscn\")
+var boss_room_tile = preload(\"res://Assets/ModularTiles/BossRoom.tscn\")
+
+func _ready():
+	generate_dungeon()
+
+def generate_dungeon():
+	tilemap.clear()  # Reset old layout
+	
+	# Place static entrance
+	var entrance_instance = entrance_tile.instantiate()
+	entrance_instance.transform.origin = Vector3(0, 0, 0)
+	add_child(entrance_instance)
+	
+	# Generate main dungeon
+	for x in range(1, dungeon_width-1):
+		for z in range(1, dungeon_height-1):
+			var floor_instance = floor_tile.instantiate()
+			floor_instance.transform.origin = Vector3(x * tile_size, 0, z * tile_size)
+			add_child(floor_instance)
+
+			if randi() % 5 == 0:  # Randomly place walls
+				var wall_instance = wall_tile.instantiate()
+				wall_instance.transform.origin = Vector3(x * tile_size, 2, z * tile_size)
+				add_child(wall_instance)
+	
+	# Place static boss room at the end
+	var boss_instance = boss_room_tile.instantiate()
+	boss_instance.transform.origin = Vector3((dungeon_width-1) * tile_size, 0, (dungeon_height-1) * tile_size)
+	add_child(boss_instance)
+"
+
+[node name="DungeonTileMap" type="Node"]
+script = SubResource("GDScript_q85p5")
