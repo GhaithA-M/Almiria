@@ -1,6 +1,8 @@
-[gd_scene load_steps=5 format=3 uid="uid://t1huqq1v00h6"]
+[gd_scene load_steps=7 format=3 uid="uid://t1huqq1v00h6"]
 
 [ext_resource type="Script" path="res://Entities/Enemies/MeleeEnemy.gd" id="1_kk2i7"]
+[ext_resource type="Script" path="res://Entities/Components/HealthComponent.gd" id="2_5kc0y"]
+[ext_resource type="Script" path="res://UI/HealthBar.gd" id="3_2qag5"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_dlcud"]
 size = Vector3(1, 0.189575, 1)
@@ -27,3 +29,22 @@ shape = SubResource("BoxShape3D_7pogb")
 mesh = SubResource("BoxMesh_ejdbd")
 
 [node name="NavigationAgent3D" type="NavigationAgent3D" parent="."]
+
+[node name="Health" type="Node" parent="."]
+script = ExtResource("2_5kc0y")
+
+[node name="HealthBar" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("3_2qag5")
+
+[node name="ProgressBar" type="ProgressBar" parent="HealthBar"]
+offset_right = 4.0
+offset_bottom = 27.0
+step = 0.1
+
+[node name="Label" type="Label" parent="HealthBar/ProgressBar"]
+offset_right = 40.0
+offset_bottom = 23.0

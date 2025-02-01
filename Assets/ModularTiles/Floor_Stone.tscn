@@ -5,7 +5,7 @@ vertices = PackedVector3Array(-0.5, 0.45, -0.5, -0.5, 0.45, 0.5, 0.5, 0.45, 0.5,
 polygons = [PackedInt32Array(3, 2, 0), PackedInt32Array(0, 2, 1)]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_1txdh"]
-albedo_color = Color(0.295741, 0.361027, 0.381402, 1)
+albedo_color = Color(0, 0.519568, 0.144289, 1)
 
 [sub_resource type="BoxMesh" id="BoxMesh_6dhkr"]
 material = SubResource("StandardMaterial3D_1txdh")

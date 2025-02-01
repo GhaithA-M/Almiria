@@ -1,83 +1,99 @@
 extends CharacterBody3D
 
-const SPEED = 2
-const SPRINT_MULTIPLIER = 2 # Multiplier for sprinting speed
-var gravity = ProjectSettings.get_setting("physics/3d/default_gravity")
-var local_velocity = Vector3.ZERO
-var offset: Vector3 = Vector3(0, 0, 0)
+@onready var health_component: HealthComponent = $Health
+@onready var health_bar: HealthBar = $HealthBar if has_node("HealthBar") else null
 
-# Bullets
+const SPEED = 2
+const SPRINT_MULTIPLIER = 2
+var gravity: float = 0.0
+var local_velocity: Vector3 = Vector3.ZERO
+
 var bullet = load("res://Entities/Weapons/WeaponProjectile1.tscn")
 var instance
 
 @onready var gun_anim = $FullAutoRifle1/AnimationPlayer
 @onready var gun_barrel = $FullAutoRifle1/RayCast3D
 
-func _physics_process(delta):
+func _ready():
+	gravity = ProjectSettings.get_setting("physics/3d/default_gravity")
+
+	add_to_group("player")
+	health_component.died.connect(_on_death)
+	health_component.health_changed.connect(_update_health)
+
+	# Ensure health bar is properly assigned
+	if health_bar:
+		health_bar.set_target(self)
+		health_bar.visible = GameSettings.healthbar_mode == 2  # Always On
+	else:
+		print("Warning: HealthBar node not found in Player.tscn")
+
+func _physics_process(delta: float):
 	local_velocity = velocity
 
 	if not is_on_floor():
 		local_velocity.y -= gravity * delta
 
-	var input_dir = Vector2(Input.get_action_strength("ui_right") - Input.get_action_strength("ui_left"),
-							Input.get_action_strength("ui_up") - Input.get_action_strength("ui_down"))
+	var input_dir = Vector2(
+		Input.get_action_strength("ui_right") - Input.get_action_strength("ui_left"),
+		Input.get_action_strength("ui_up") - Input.get_action_strength("ui_down")
+	)
 	var direction = Vector3(input_dir.x, 0, -input_dir.y)
 	var current_speed = SPEED
-	
-		# Check if shift key is pressed for sprinting
+
 	if Input.is_key_pressed(KEY_SHIFT):
 		current_speed *= SPRINT_MULTIPLIER
-	
+
 	if direction != Vector3.ZERO:
 		local_velocity.x = direction.x * current_speed
 		local_velocity.z = direction.z * current_speed
 	else:
-		# Multiply by variable (3) for deceleration, higher number reduces slide
 		local_velocity.x = lerp(local_velocity.x, 0.0, (SPEED * delta * 3))
 		local_velocity.z = lerp(local_velocity.z, 0.0, (SPEED * delta * 3))
 
 	self.velocity = local_velocity
 	move_and_slide()
-	
-# Shooting
+
 	if Input.is_action_pressed("shoot"):
-		if !gun_anim.is_playing():
-			gun_anim.play("Shoot")
-			instance = bullet.instantiate()
-			instance.position = gun_barrel.global_position
-			instance.transform.basis = gun_barrel.global_transform.basis
-			get_parent().add_child(instance)
-	
-	var target_position = ScreenPointToRay()
+		_fire_weapon()
+
+	var target_position = _screen_point_to_ray()
 	if target_position != Vector3.ZERO:
-		target_position.y = global_transform.origin.y  # Ignore vertical difference
+		target_position.y = global_transform.origin.y
 		look_at(target_position, Vector3.UP)
 
-# Function to convert screen point to a ray in 3D space
-func ScreenPointToRay():
-	# Get the current physics state
-	var spaceState = get_world_3d().get_direct_space_state()
-	
-	# Get the current mouse position in the viewport
-	var mouse_pos = get_viewport().get_mouse_position()
-	
-	# Get the current camera in the viewport
-	var camera = get_viewport().get_camera_3d()
-	
-	# Calculate the ray origin by projecting the mouse position into 3D space
-	var rayOrigin = camera.project_ray_origin(mouse_pos)
-	
-	# Calculate the ray end point by adding the projected normal of the mouse position to the ray origin
-	var rayEnd = rayOrigin + camera.project_ray_normal(mouse_pos) * 2000
-	
-	# Perform a ray intersection query using the ray origin and end point
-	var rayArray = spaceState.intersect_ray(PhysicsRayQueryParameters3D.create(rayOrigin, rayEnd))
-	
-	# If the ray intersection query has a position (it hit something), return that position
-	if rayArray.has("position"):
-		return rayArray["position"]
-	# If the ray intersection query did not hit anything, return a zero vector
-	return Vector3()
+func _fire_weapon():
+	if !gun_anim.is_playing():
+		gun_anim.play("Shoot")
+		instance = bullet.instantiate()
+		instance.position = gun_barrel.global_position
+		instance.transform.basis = gun_barrel.global_transform.basis
+		get_parent().add_child(instance)
 
-func _ready():
-	add_to_group("player")
+func take_damage(amount: int):
+	health_component.take_damage(amount)
+	if GameSettings.healthbar_mode == 1:  # Show on Damage
+		health_bar.visible = true
+		await get_tree().create_timer(3.0).timeout
+		health_bar.visible = false
+
+func _update_health(new_health: int):
+	if health_bar:
+		health_bar.progress_bar.value = new_health
+		health_bar.label.text = str(new_health) + " / " + str(health_component.max_health)
+
+func _on_death():
+	print("Player died! Losing durability...")
+	DurabilityManager.reduce_durability()
+
+func _screen_point_to_ray():
+	var space_state = get_world_3d().get_direct_space_state()
+	var mouse_pos = get_viewport().get_mouse_position()
+	var camera = get_viewport().get_camera_3d()
+	var ray_origin = camera.project_ray_origin(mouse_pos)
+	var ray_end = ray_origin + camera.project_ray_normal(mouse_pos) * 2000
+	var ray_query = space_state.intersect_ray(PhysicsRayQueryParameters3D.create(ray_origin, ray_end))
+	
+	if ray_query.has("position"):
+		return ray_query["position"]
+	return Vector3()

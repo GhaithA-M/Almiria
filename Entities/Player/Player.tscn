@@ -1,6 +1,8 @@
-[gd_scene load_steps=5 format=3 uid="uid://crv0ggn8hmrto"]
+[gd_scene load_steps=7 format=3 uid="uid://crv0ggn8hmrto"]
 
 [ext_resource type="Script" path="res://Entities/Player/Player.gd" id="1_rktay"]
+[ext_resource type="Script" path="res://Entities/Components/HealthComponent.gd" id="2_gwbe4"]
+[ext_resource type="Script" path="res://UI/HealthBar.gd" id="3_mo2i8"]
 
 [sub_resource type="CapsuleMesh" id="CapsuleMesh_t8ukv"]
 
@@ -32,3 +34,22 @@ mesh = SubResource("CapsuleMesh_6lgtf")
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
 shape = SubResource("CapsuleShape3D_ylvku")
+
+[node name="Health" type="Node" parent="."]
+script = ExtResource("2_gwbe4")
+
+[node name="HealthBar" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("3_mo2i8")
+
+[node name="ProgressBar" type="ProgressBar" parent="HealthBar"]
+layout_mode = 0
+offset_right = 4.0
+offset_bottom = 27.0
+step = 0.1
+
+[node name="Label" type="Label" parent="HealthBar/ProgressBar"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0

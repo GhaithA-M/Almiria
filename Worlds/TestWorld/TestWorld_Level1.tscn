@@ -1,8 +1,8 @@
 [gd_scene load_steps=6 format=3 uid="uid://drddbewp1vrvh"]
 
-[ext_resource type="PackedScene" uid="uid://chhrnekvmqraw" path="res://Maps/Walls/World1_Wall1.tscn" id="1_d5kxy"]
-[ext_resource type="PackedScene" uid="uid://bvyis4717r2k6" path="res://Maps/Floors/World1_Floor1.tscn" id="2_uiv8n"]
-[ext_resource type="PackedScene" uid="uid://bt7xdjuj2g2g7" path="res://Maps/World1/World1_Background.tscn" id="3_mfh42"]
+[ext_resource type="PackedScene" uid="uid://chhrnekvmqraw" path="res://Worlds/TestWorld/TestWorld_Wall1.tscn" id="1_d5kxy"]
+[ext_resource type="PackedScene" uid="uid://bvyis4717r2k6" path="res://Worlds/TestWorld/TestWorld_Floor1.tscn" id="2_uiv8n"]
+[ext_resource type="PackedScene" uid="uid://bt7xdjuj2g2g7" path="res://Worlds/TestWorld/TestWorld_Background.tscn" id="3_mfh42"]
 [ext_resource type="PackedScene" uid="uid://35affxvgtm04" path="res://Entities/Enemies/Enemy1.tscn" id="4_x35y3"]
 
 [sub_resource type="NavigationMesh" id="NavigationMesh_irfd2"]
