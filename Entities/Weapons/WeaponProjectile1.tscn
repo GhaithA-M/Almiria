@@ -1,17 +1,17 @@
 [gd_scene load_steps=7 format=3 uid="uid://2b4pbn8hpwr6"]
 
-[ext_resource type="Script" path="res://Entities/WeaponProjectile1.gd" id="1_i7jpw"]
+[ext_resource type="Script" path="res://Entities/Weapons/WeaponProjectile1.gd" id="1_i7jpw"]
 
 [sub_resource type="CylinderMesh" id="CylinderMesh_2apwi"]
-top_radius = 0.01
-bottom_radius = 0.03
-height = 0.05
+top_radius = 0.025
+bottom_radius = 0.075
+height = 0.1
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_r2h5h"]
 albedo_color = Color(1, 0, 0, 1)
 emission_enabled = true
-emission = Color(1, 0, 0, 1)
-emission_energy_multiplier = 5.0
+emission = Color(0.37147, 0.305932, 0, 1)
+emission_energy_multiplier = 10.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_yc63e"]
 albedo_color = Color(1, 0, 0, 1)

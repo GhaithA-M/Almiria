@@ -1,10 +1,13 @@
-[gd_scene load_steps=3 format=3 uid="uid://d2bqiibbykx53"]
+[gd_scene load_steps=4 format=3 uid="uid://6xp87ueo6vu0"]
+
+[ext_resource type="Script" path="res://Assets/GridMaps/DungeonGenerator.gd" id="1_itsba"]
 
 [sub_resource type="MeshLibrary" id="MeshLibrary_inul1"]
 
 [sub_resource type="PhysicsMaterial" id="PhysicsMaterial_nkf36"]
 
-[node name="DungeonGridMap" type="Node"]
+[node name="DungeonGridMap" type="Node3D"]
+script = ExtResource("1_itsba")
 
 [node name="GridMap" type="GridMap" parent="."]
 mesh_library = SubResource("MeshLibrary_inul1")
