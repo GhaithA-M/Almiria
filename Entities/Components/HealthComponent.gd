@@ -9,13 +9,13 @@ signal health_changed(new_health)
 signal died(entity)
 
 func take_damage(amount: int):
-	current_health -= amount
-	health_changed.emit(current_health)
-	
-	if current_health <= 0:
-		current_health = 0
-		died.emit(get_parent())  # Notify that the entity died.
+    current_health -= amount
+    health_changed.emit(current_health)
+    
+    if current_health <= 0:
+        current_health = 0
+        died.emit(get_parent())  # Notify that the entity died.
 
 func heal(amount: int):
-	current_health = min(current_health + amount, max_health)
-	health_changed.emit(current_health)
+    current_health = min(current_health + amount, max_health)
+    health_changed.emit(current_health)

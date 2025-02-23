@@ -1,12 +1,19 @@
-[gd_scene load_steps=7 format=3 uid="uid://crv0ggn8hmrto"]
+[gd_scene load_steps=10 format=3 uid="uid://crv0ggn8hmrto"]
 
 [ext_resource type="Script" path="res://Entities/Player/Player.gd" id="1_rktay"]
+[ext_resource type="Script" path="res://Entities/Player/Camera.gd" id="2_gq0ky"]
 [ext_resource type="Script" path="res://Entities/Components/HealthComponent.gd" id="2_gwbe4"]
 [ext_resource type="Script" path="res://UI/HealthBar.gd" id="3_mo2i8"]
 
+[sub_resource type="SeparationRayShape3D" id="SeparationRayShape3D_mx7sh"]
+
 [sub_resource type="CapsuleMesh" id="CapsuleMesh_t8ukv"]
 
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_jcyjq"]
+albedo_color = Color(0.781614, 0.513912, 0.400263, 1)
+
 [sub_resource type="CapsuleMesh" id="CapsuleMesh_6lgtf"]
+material = SubResource("StandardMaterial3D_jcyjq")
 radius = 0.1
 height = 0.25
 
@@ -15,20 +22,26 @@ height = 0.25
 [node name="Player" type="CharacterBody3D"]
 script = ExtResource("1_rktay")
 
+[node name="SpringArm3D" type="SpringArm3D" parent="."]
+shape = SubResource("SeparationRayShape3D_mx7sh")
+spring_length = 2.0
+margin = 0.25
+
+[node name="Camera3D" type="Camera3D" parent="SpringArm3D" node_paths=PackedStringArray("player")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, 3)
+script = ExtResource("2_gq0ky")
+player = NodePath("../..")
+
 [node name="MeshInstance3D" type="MeshInstance3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
 mesh = SubResource("CapsuleMesh_t8ukv")
 
-[node name="Nose" type="MeshInstance3D" parent="MeshInstance3D"]
-transform = Transform3D(1.91069e-15, -4.37114e-08, 1, -1, -4.37114e-08, 0, 4.37114e-08, -1, -4.37114e-08, 0, 0.25, -0.5)
-mesh = SubResource("CapsuleMesh_6lgtf")
-
 [node name="RightEye" type="MeshInstance3D" parent="MeshInstance3D"]
-transform = Transform3D(1.91069e-15, -4.37114e-08, 1, -1, -4.37114e-08, 0, 4.37114e-08, -1, -4.37114e-08, 0.2, 0.5, -0.4)
+transform = Transform3D(1.91069e-15, -4.37114e-08, 1, -1, -4.37114e-08, 0, 4.37114e-08, -1, -4.37114e-08, 0.2, 0.5, 0.4)
 mesh = SubResource("CapsuleMesh_6lgtf")
 
 [node name="LeftEye" type="MeshInstance3D" parent="MeshInstance3D"]
-transform = Transform3D(1.91069e-15, -4.37114e-08, 1, -1, -4.37114e-08, 0, 4.37114e-08, -1, -4.37114e-08, -0.2, 0.5, -0.4)
+transform = Transform3D(1.91069e-15, -4.37114e-08, 1, -1, -4.37114e-08, 0, 4.37114e-08, -1, -4.37114e-08, -0.2, 0.5, 0.4)
 mesh = SubResource("CapsuleMesh_6lgtf")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
@@ -45,11 +58,17 @@ script = ExtResource("3_mo2i8")
 
 [node name="ProgressBar" type="ProgressBar" parent="HealthBar"]
 layout_mode = 0
-offset_right = 4.0
-offset_bottom = 27.0
+offset_left = 10.0
+offset_top = 10.0
+offset_right = 160.0
+offset_bottom = 40.0
 step = 0.1
 
 [node name="Label" type="Label" parent="HealthBar/ProgressBar"]
 layout_mode = 0
-offset_right = 40.0
-offset_bottom = 23.0
+offset_left = 155.0
+offset_right = 185.0
+offset_bottom = 30.0
+text = "HP"
+horizontal_alignment = 1
+vertical_alignment = 1

@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://bt7xdjuj2g2g7"]
 
-[ext_resource type="PackedScene" uid="uid://bvyis4717r2k6" path="res://Maps/Floors/World1_Background_Floor1.tscn" id="1_xt03i"]
+[ext_resource type="PackedScene" uid="uid://bvyis4717r2k6" path="res://Worlds/TestWorld/TestWorld_Floor1.tscn" id="1_xt03i"]
 
 [node name="World1_Background" type="Node3D"]
 transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0, 0, 0)

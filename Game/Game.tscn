@@ -1,24 +1,19 @@
-[gd_scene load_steps=6 format=3 uid="uid://knmtwmx8obbn"]
+[gd_scene load_steps=5 format=3 uid="uid://knmtwmx8obbn"]
 
 [ext_resource type="PackedScene" uid="uid://crv0ggn8hmrto" path="res://Entities/Player/Player.tscn" id="1_plohb"]
-[ext_resource type="PackedScene" uid="uid://dwg3327op3v8c" path="res://Entities/Player/Camera.tscn" id="2_5rw44"]
 [ext_resource type="PackedScene" uid="uid://bbvw681yvkiqo" path="res://Entities/Weapons/FullAutoRifle1.tscn" id="3_gwb3g"]
 [ext_resource type="PackedScene" uid="uid://drddbewp1vrvh" path="res://Worlds/TestWorld/TestWorld_Level1.tscn" id="4_e7l8c"]
 [ext_resource type="PackedScene" uid="uid://t1huqq1v00h6" path="res://Entities/Enemies/MeleeEnemy.tscn" id="5_dut5i"]
 
 [node name="Game" type="Node3D"]
 
+[node name="World1_Level1" parent="." instance=ExtResource("4_e7l8c")]
+
 [node name="Player" parent="." instance=ExtResource("1_plohb")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, -4)
 
 [node name="FullAutoRifle1" parent="Player" instance=ExtResource("3_gwb3g")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.5, -0.690117)
-
-[node name="Camera" parent="." node_paths=PackedStringArray("camera_point") instance=ExtResource("2_5rw44")]
-far = 50.0
-camera_point = NodePath("../Player")
-
-[node name="World1_Level1" parent="." instance=ExtResource("4_e7l8c")]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 0, 1.5, 0.7)
 
 [node name="MeleeEnemy" parent="." instance=ExtResource("5_dut5i")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9, 2, -5)

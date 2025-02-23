@@ -36,15 +36,24 @@ script = ExtResource("2_5kc0y")
 [node name="HealthBar" type="Control" parent="."]
 layout_mode = 3
 anchors_preset = 0
+offset_top = 35.0
 offset_right = 40.0
-offset_bottom = 40.0
+offset_bottom = 75.0
 script = ExtResource("3_2qag5")
 
 [node name="ProgressBar" type="ProgressBar" parent="HealthBar"]
-offset_right = 4.0
-offset_bottom = 27.0
+layout_mode = 0
+offset_left = 10.0
+offset_top = 10.0
+offset_right = 160.0
+offset_bottom = 40.0
 step = 0.1
 
 [node name="Label" type="Label" parent="HealthBar/ProgressBar"]
-offset_right = 40.0
-offset_bottom = 23.0
+layout_mode = 0
+offset_left = 155.0
+offset_right = 185.0
+offset_bottom = 30.0
+text = "MeleeEnemy"
+horizontal_alignment = 1
+vertical_alignment = 1

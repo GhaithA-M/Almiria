@@ -6,21 +6,21 @@ const SPEED = 25.0
 @onready var ray = $RayCast3D
 @onready var particles = $GPUParticles3D
 
-# Called when the node enters the scene tree for the first time.
 func _ready():
-	pass # Replace with function body.
+    pass
 
-# Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
-	position += transform.basis * Vector3(0, 0, -SPEED) * delta
-	if ray.is_colliding():
-		mesh.visible = false
-		particles.emitting = true
-		ray.enabled = false
-		if ray.get_collider().is_in_group("enemy"):
-			ray.get_collider().hit()
-		await get_tree().create_timer(0.10).timeout # Seconds to show impact particle
-		queue_free()
+    position += transform.basis * Vector3(0, 0, -SPEED) * delta
+    if ray.is_colliding():
+        mesh.visible = false
+        particles.emitting = true
+        ray.enabled = false
+        var collider = ray.get_collider()
+        print("Bullet hit:", collider)
+        if collider.is_in_group("enemy"):
+            collider.take_damage(10)  # Apply damage to the enemy
+        await get_tree().create_timer(0.20).timeout  # Seconds to show impact particle
+        queue_free()
 
 func _on_timer_timeout():
-	queue_free()
+    queue_free()
