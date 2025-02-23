@@ -51,8 +51,9 @@ _data = {
 "Shoot": SubResource("Animation_4y82o")
 }
 
-[node name="FullAutoRifle1" type="Node3D"]
+[node name="FullAutoRifle1" type="Node3D" node_paths=PackedStringArray("crosshair")]
 script = ExtResource("1_3lxxf")
+crosshair = NodePath("Crosshair")
 
 [node name="Barrel" type="MeshInstance3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 0, 0)

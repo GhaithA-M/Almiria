@@ -1,8 +1,8 @@
 extends CharacterBody3D
 
-@export var move_speed: float = 2.5
+@export var move_speed: float = 1.5
 @export var gravity: float = 9.8
-@export var path_update_time: float = 0.1  # Update path every second
+@export var path_update_time: float = 1  # Update path every second
 
 var player: Node3D = null
 var last_path_update: float = 0.0

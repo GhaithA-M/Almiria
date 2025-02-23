@@ -20,6 +20,7 @@ height = 0.25
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_ylvku"]
 
 [node name="Player" type="CharacterBody3D"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 0, 0, 0)
 script = ExtResource("1_rktay")
 
 [node name="SpringArm3D" type="SpringArm3D" parent="."]
@@ -28,21 +29,20 @@ spring_length = 2.0
 margin = 0.25
 
 [node name="Camera3D" type="Camera3D" parent="SpringArm3D" node_paths=PackedStringArray("player")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, 3)
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 0, 2, -3)
 script = ExtResource("2_gq0ky")
 player = NodePath("../..")
-camera_height = 2.0
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
 mesh = SubResource("CapsuleMesh_t8ukv")
 
 [node name="RightEye" type="MeshInstance3D" parent="MeshInstance3D"]
-transform = Transform3D(1.91069e-15, -4.37114e-08, 1, -1, -4.37114e-08, 0, 4.37114e-08, -1, -4.37114e-08, 0.2, 0.5, -0.4)
+transform = Transform3D(1.91069e-15, -4.37114e-08, 1, -1, -4.37114e-08, 0, 4.37114e-08, -1, -4.37114e-08, 0.2, 0.5, 0.4)
 mesh = SubResource("CapsuleMesh_6lgtf")
 
 [node name="LeftEye" type="MeshInstance3D" parent="MeshInstance3D"]
-transform = Transform3D(1.91069e-15, -4.37114e-08, 1, -1, -4.37114e-08, 0, 4.37114e-08, -1, -4.37114e-08, -0.2, 0.5, -0.4)
+transform = Transform3D(1.91069e-15, -4.37114e-08, 1, -1, -4.37114e-08, 0, 4.37114e-08, -1, -4.37114e-08, -0.2, 0.5, 0.4)
 mesh = SubResource("CapsuleMesh_6lgtf")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]

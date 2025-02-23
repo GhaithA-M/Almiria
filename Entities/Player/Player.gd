@@ -1,13 +1,12 @@
 extends CharacterBody3D
 
-const SPEED = 2
-const SPRINT_MULTIPLIER = 2  # Multiplier for sprinting speed
+const SPEED = 4.0
+const SPRINT_MULTIPLIER = 1.5  # Multiplier for sprinting speed
 var gravity = ProjectSettings.get_setting("physics/3d/default_gravity")
 var local_velocity = Vector3.ZERO
-var offset: Vector3 = Vector3(0, 0, 0)
 
 # Bullets
-var bullet = load("res://Entities/Weapons/WeaponProjectile1.tscn")
+var bullet = preload("res://Entities/Weapons/WeaponProjectile1.tscn")
 var instance
 
 @export var camera: Camera3D  # Make sure this is assigned in the Inspector
@@ -16,23 +15,26 @@ var instance
 @onready var gun_barrel = $FullAutoRifle1/RayCast3D
 
 func _physics_process(delta):
-	local_velocity = velocity
+	local_velocity = velocity  # Copy current velocity
 
+	# **Apply gravity**
 	if not is_on_floor():
 		local_velocity.y -= gravity * delta
+	else:
+		local_velocity.y = 0  # Reset vertical velocity when grounded
 
+	# **Get movement input**
 	var input_dir = Vector2(
-		Input.get_action_strength("ui_right") - Input.get_action_strength("ui_left"),
-		Input.get_action_strength("ui_up") - Input.get_action_strength("ui_down")
+		Input.get_action_strength("ui_left") - Input.get_action_strength("ui_right"),
+		Input.get_action_strength("ui_down") - Input.get_action_strength("ui_up")
 	)
 
 	var current_speed = SPEED
 	if Input.is_key_pressed(KEY_SHIFT):
 		current_speed *= SPRINT_MULTIPLIER
 
-	# **Fix: Movement relative to player's facing direction**
+	# **Move relative to player's facing direction**
 	if input_dir.length() > 0:
-		# Get the player's forward and right direction
 		var forward = -global_transform.basis.z.normalized()  # Player's forward direction
 		var right = global_transform.basis.x.normalized()  # Player's right direction
 		
@@ -40,8 +42,12 @@ func _physics_process(delta):
 		var move_dir = (forward * input_dir.y + right * input_dir.x).normalized()
 		local_velocity.x = move_dir.x * current_speed
 		local_velocity.z = move_dir.z * current_speed
+	else:
+		# **Fix: Stop player from "floating" when releasing movement keys**
+		local_velocity.x = move_toward(local_velocity.x, 0, SPEED * delta * 5)  # Apply friction
+		local_velocity.z = move_toward(local_velocity.z, 0, SPEED * delta * 5)
 
-# **Fix: Rotate player based on mouse aim instead of movement**
+	# **Fix: Rotate player based on mouse aim instead of movement**
 	var target_position = ScreenPointToRay()
 	if target_position != Vector3.ZERO:
 		target_position.y = global_transform.origin.y  # Keep rotation level
