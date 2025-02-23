@@ -1,6 +1,6 @@
 extends CharacterBody3D
 
-const SPEED = 4
+const SPEED = 2
 const SPRINT_MULTIPLIER = 2  # Multiplier for sprinting speed
 var gravity = ProjectSettings.get_setting("physics/3d/default_gravity")
 var local_velocity = Vector3.ZERO
@@ -22,8 +22,8 @@ func _physics_process(delta):
 		local_velocity.y -= gravity * delta
 
 	var input_dir = Vector2(
-		Input.get_action_strength("ui_left") - Input.get_action_strength("ui_right"),
-		Input.get_action_strength("ui_down") - Input.get_action_strength("ui_up")
+		Input.get_action_strength("ui_right") - Input.get_action_strength("ui_left"),
+		Input.get_action_strength("ui_up") - Input.get_action_strength("ui_down")
 	)
 
 	var current_speed = SPEED
@@ -40,18 +40,16 @@ func _physics_process(delta):
 		var move_dir = (forward * input_dir.y + right * input_dir.x).normalized()
 		local_velocity.x = move_dir.x * current_speed
 		local_velocity.z = move_dir.z * current_speed
-		
-		# Rotate the player to match movement direction
-		var target_rotation = atan2(-move_dir.x, -move_dir.z)
-		rotation.y = lerp_angle(rotation.y, target_rotation, delta * 10)  # Smooth rotation
-	else:
-		# Smooth stopping when no input is given
-		local_velocity.x = lerp(local_velocity.x, 0.0, SPEED * delta * 3)
-		local_velocity.z = lerp(local_velocity.z, 0.0, SPEED * delta * 3)
+
+# **Fix: Rotate player based on mouse aim instead of movement**
+	var target_position = ScreenPointToRay()
+	if target_position != Vector3.ZERO:
+		target_position.y = global_transform.origin.y  # Keep rotation level
+		look_at(target_position, Vector3.UP)
 
 	self.velocity = local_velocity
 	move_and_slide()
-	
+
 	# **Shooting**
 	if Input.is_action_pressed("shoot"):
 		if !gun_anim.is_playing():
@@ -60,11 +58,6 @@ func _physics_process(delta):
 			instance.position = gun_barrel.global_position
 			instance.transform.basis = gun_barrel.global_transform.basis
 			get_parent().add_child(instance)
-	
-	var target_position = ScreenPointToRay()
-	if target_position != Vector3.ZERO:
-		target_position.y = global_transform.origin.y  # Ignore vertical difference
-		look_at(target_position, Vector3.UP)
 
 # **Fix: Raycasting for Aiming**
 func ScreenPointToRay():

@@ -3,7 +3,7 @@ extends Camera3D
 @export var player: CharacterBody3D  # The player to follow
 @export var camera_distance: float = 4.0  # Distance behind player
 @export var camera_height: float = 1.5  # Height above player
-@export var rotation_speed: float = 0.1  # Adjust for mouse sensitivity
+@export var rotation_speed: float = 0.05  # Adjust for mouse sensitivity
 @export var vertical_limit: float = 75.0  # Limits looking too far up/down
 
 var rotation_x: float = 0.0  # Vertical angle

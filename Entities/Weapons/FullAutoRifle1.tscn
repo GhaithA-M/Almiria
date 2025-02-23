@@ -1,4 +1,7 @@
-[gd_scene load_steps=7 format=3 uid="uid://bbvw681yvkiqo"]
+[gd_scene load_steps=9 format=3 uid="uid://bbvw681yvkiqo"]
+
+[ext_resource type="Script" path="res://Entities/Weapons/Rifle.gd" id="1_3lxxf"]
+[ext_resource type="PackedScene" uid="uid://dk26yy5m3cox3" path="res://Entities/Player/UI/Crosshair.tscn" id="2_u60yw"]
 
 [sub_resource type="CylinderMesh" id="CylinderMesh_bbq0f"]
 top_radius = 0.025
@@ -49,6 +52,7 @@ _data = {
 }
 
 [node name="FullAutoRifle1" type="Node3D"]
+script = ExtResource("1_3lxxf")
 
 [node name="Barrel" type="MeshInstance3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 0, 0)
@@ -67,3 +71,9 @@ target_position = Vector3(0, 0, -1)
 libraries = {
 "": SubResource("AnimationLibrary_k8iyl")
 }
+
+[node name="Crosshair" parent="." instance=ExtResource("2_u60yw")]
+offset_left = 642.225
+offset_top = 307.757
+offset_right = 642.225
+offset_bottom = 307.757
