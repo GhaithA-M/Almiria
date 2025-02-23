@@ -3,9 +3,9 @@
 [ext_resource type="Script" path="res://Entities/Weapons/WeaponProjectile1.gd" id="1_i7jpw"]
 
 [sub_resource type="CylinderMesh" id="CylinderMesh_2apwi"]
-top_radius = 0.025
-bottom_radius = 0.075
-height = 0.1
+top_radius = 0.015
+bottom_radius = 0.05
+height = 0.8
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_r2h5h"]
 albedo_color = Color(1, 0, 0, 1)

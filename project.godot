@@ -19,10 +19,15 @@ config/icon="res://icon.svg"
 
 DurabilityManager="*res://Systems/DurabilitySystem.gd"
 GameSettings="*res://Systems/GameSettings.gd"
+DebugSettings="*res://Systems/DebugSettings.gd"
 
 [dotnet]
 
 project/assembly_name="Almiria"
+
+[global_group]
+
+enemy="Every AI entity that can take damage"
 
 [input]
 

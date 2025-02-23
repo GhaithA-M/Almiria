@@ -1,21 +1,25 @@
-extends Node
+extends Node  # HealthComponent is a generic node for managing health
 
-class_name HealthComponent
+class_name HealthComponent  # Assigns a class name for easy reference
 
-@export var max_health: int = 100
-@export var current_health: int = 100
+# Health variables
+@export var max_health: int = 100  # Maximum health the entity can have
+@export var current_health: int = 100  # The entity's current health
 
-signal health_changed(new_health)
-signal died(entity)
+# Signals for health updates and death
+signal health_changed(new_health)  # Emitted when health changes
+signal died(entity)  # Emitted when health reaches 0
 
 func take_damage(amount: int):
-    current_health -= amount
-    health_changed.emit(current_health)
-    
-    if current_health <= 0:
-        current_health = 0
-        died.emit(get_parent())  # Notify that the entity died.
+	if DebugSettings.DEBUG_MODE == 1:
+		print("🔥 HealthComponent received damage:", amount)
 
-func heal(amount: int):
-    current_health = min(current_health + amount, max_health)
-    health_changed.emit(current_health)
+	current_health -= amount
+
+	if current_health <= 0:
+		current_health = 0
+		if DebugSettings.DEBUG_MODE == 1:
+			print("💀 Entity has died!")
+		died.emit()  # REMOVE get_parent() to avoid argument mismatch
+
+	health_changed.emit(current_health)

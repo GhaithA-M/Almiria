@@ -2,18 +2,20 @@
 
 [ext_resource type="Script" path="res://Entities/Enemies/MeleeEnemy.gd" id="1_kk2i7"]
 [ext_resource type="Script" path="res://Entities/Components/HealthComponent.gd" id="2_5kc0y"]
-[ext_resource type="Script" path="res://UI/HealthBar.gd" id="3_2qag5"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_dlcud"]
 size = Vector3(1, 0.189575, 1)
 
-[sub_resource type="BoxShape3D" id="BoxShape3D_7pogb"]
-size = Vector3(1, 2, 1)
-
 [sub_resource type="BoxMesh" id="BoxMesh_ejdbd"]
 size = Vector3(1, 2, 1)
 
-[node name="MeleeEnemy" type="CharacterBody3D"]
+[sub_resource type="BoxShape3D" id="BoxShape3D_7pogb"]
+size = Vector3(1, 2, 1)
+
+[sub_resource type="ViewportTexture" id="ViewportTexture_b1o4h"]
+viewport_path = NodePath("HealthViewport")
+
+[node name="MeleeEnemy" type="CharacterBody3D" groups=["enemy"]]
 script = ExtResource("1_kk2i7")
 
 [node name="Area3D" type="Area3D" parent="."]
@@ -22,38 +24,42 @@ script = ExtResource("1_kk2i7")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.405212, 0)
 shape = SubResource("BoxShape3D_dlcud")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
-shape = SubResource("BoxShape3D_7pogb")
-
 [node name="MeshInstance3D" type="MeshInstance3D" parent="."]
 mesh = SubResource("BoxMesh_ejdbd")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("BoxShape3D_7pogb")
 
 [node name="NavigationAgent3D" type="NavigationAgent3D" parent="."]
 
 [node name="Health" type="Node" parent="."]
 script = ExtResource("2_5kc0y")
 
-[node name="HealthBar" type="Control" parent="."]
+[node name="HealthViewport" type="SubViewport" parent="."]
+transparent_bg = true
+size = Vector2i(64, 32)
+render_target_update_mode = 4
+
+[node name="Control" type="Control" parent="HealthViewport"]
 layout_mode = 3
-anchors_preset = 0
-offset_top = 35.0
-offset_right = 40.0
-offset_bottom = 75.0
-script = ExtResource("3_2qag5")
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+metadata/_edit_use_anchors_ = true
 
-[node name="ProgressBar" type="ProgressBar" parent="HealthBar"]
-layout_mode = 0
-offset_left = 10.0
-offset_top = 10.0
-offset_right = 160.0
-offset_bottom = 40.0
-step = 0.1
+[node name="ProgressBar" type="ProgressBar" parent="HealthViewport/Control"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+value = 100.0
+metadata/_edit_use_anchors_ = true
 
-[node name="Label" type="Label" parent="HealthBar/ProgressBar"]
-layout_mode = 0
-offset_left = 155.0
-offset_right = 185.0
-offset_bottom = 30.0
-text = "MeleeEnemy"
-horizontal_alignment = 1
-vertical_alignment = 1
+[node name="HealthSprite3D" type="Sprite3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.3, 0)
+pixel_size = 0.015
+texture = SubResource("ViewportTexture_b1o4h")

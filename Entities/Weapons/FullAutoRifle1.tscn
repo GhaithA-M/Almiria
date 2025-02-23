@@ -20,7 +20,7 @@ size = Vector3(0.025, 0.07, 0.035)
 
 [sub_resource type="Animation" id="Animation_4y82o"]
 resource_name = "Shoot"
-length = 0.1
+length = 0.01
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = false
@@ -40,7 +40,7 @@ tracks/1/path = NodePath("Barrel:position")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/keys = {
-"times": PackedFloat32Array(0, 0.04, 0.08),
+"times": PackedFloat32Array(0, 0.04, 0.05),
 "transitions": PackedFloat32Array(1, 1, 1),
 "update": 0,
 "values": [Vector3(0, 0, 0), Vector3(0, 0, 0.1), Vector3(0, 0, 0)]
@@ -78,3 +78,5 @@ offset_left = 642.225
 offset_top = 307.757
 offset_right = 642.225
 offset_bottom = 307.757
+
+[node name="FireTimer" type="Timer" parent="."]

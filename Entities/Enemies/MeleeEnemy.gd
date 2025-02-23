@@ -2,60 +2,78 @@ extends CharacterBody3D
 
 @export var move_speed: float = 1.5
 @export var gravity: float = 9.8
-@export var path_update_time: float = 1  # Update path every second
+@export var path_update_time: float = 1
 
 var player: Node3D = null
 var last_path_update: float = 0.0
-var velocity_y: float = 0.0  # Gravity storage
+var velocity_y: float = 0.0
 
-@onready var health_component: HealthComponent = $Health
-@onready var health_bar: HealthBar = $HealthBar if has_node("HealthBar") else null
-@onready var nav_agent: NavigationAgent3D = $NavigationAgent3D
+@onready var health_component: HealthComponent = $Health  # Reference to the health component
+@onready var health_bar: ProgressBar = $HealthViewport/Control/ProgressBar  # Reference to ProgressBar
+@onready var health_sprite: Sprite3D = $HealthSprite3D  # The node for the 3D health bar
+@onready var nav_agent: NavigationAgent3D = $NavigationAgent3D  # Navigation agent for pathfinding
 
-var nav_ready: bool = false  # Track if navigation is ready
+var nav_ready: bool = false  # Indicates if navigation system is ready
 
+# Fix rotation for health bar
 func _ready():
-	find_player()
+	if DebugSettings.DEBUG_MODE == 1:
+		print("🔹 MeleeEnemy Ready!")  # Debug: Confirms script is running
 
-	# Wait for NavigationServer to sync before setting paths
+	find_player()
 	NavigationServer3D.map_changed.connect(_on_navigation_ready)
 
-	health_component.died.connect(_on_death)
-	health_component.health_changed.connect(_update_health)
-
-	if health_bar:
-		health_bar.set_target(self)
-		health_bar.visible = GameSettings.healthbar_mode == 2  # Always On
-		print("HealthBar set to Always On")
+	if health_component:
+		health_component.died.connect(_on_death)  # Connect to the _on_death method
+		health_component.health_changed.connect(_update_health)
+		if DebugSettings.DEBUG_MODE == 1:
+			print("✅ HealthComponent found:", health_component)
 	else:
-		print("Warning: HealthBar node not found in MeleeEnemy.tscn")
+		if DebugSettings.DEBUG_MODE == 1:
+			print("❌ ERROR: HealthComponent is MISSING!")
+
+	# Health bar visibility setup
+	if health_bar:
+		health_bar.visible = GameSettings.healthbar_mode == 2  # Show always
+		if DebugSettings.DEBUG_MODE == 1:
+			print("✅ HealthBar is active")
+	else:
+		if DebugSettings.DEBUG_MODE == 1:
+			print("⚠️ Warning: No HealthBar node found!")
+
+	# Health bar positioning above the enemy
+	health_sprite.position = Vector3(0, 2.5, 0)  # 2.5 units above the enemy
+	# Make health bar face camera initially
+	health_sprite.look_at(get_viewport().get_camera_3d().global_transform.origin)
 
 func _on_navigation_ready(_map_id = null):
-	nav_ready = true  # Mark navigation as ready
-	print("Navigation system is ready!")
+	nav_ready = true
+	if DebugSettings.DEBUG_MODE == 1:
+		print("✅ Navigation system ready!")
 
 func find_player():
 	var players = get_tree().get_nodes_in_group("player")
 	if players.size() > 0:
 		player = players[0]
-		print("Player found:", player)
+		if DebugSettings.DEBUG_MODE == 1:
+			print("✅ Player detected:", player)
+	else:
+		if DebugSettings.DEBUG_MODE == 1:
+			print("❌ No player found!")
 
 func _physics_process(delta):
-	# Apply gravity
-	velocity_y -= gravity * delta
-	velocity.y = velocity_y
+	velocity_y -= gravity * delta  # Apply gravity
+	velocity.y = velocity_y  # Update vertical velocity
 
 	if not player or not nav_ready:
 		move_and_slide()
 		return
 
-	# Update pathfinding every second
 	last_path_update += delta
 	if last_path_update >= path_update_time:
 		last_path_update = 0
 		nav_agent.target_position = player.global_position
 
-	# Ensure path exists before trying to follow it
 	if nav_agent.is_navigation_finished():
 		velocity.x = 0
 		velocity.z = 0
@@ -69,23 +87,45 @@ func _physics_process(delta):
 
 	move_and_slide()
 
+	# Rotate health bar to face camera smoothly
+	health_sprite.look_at(get_viewport().get_camera_3d().global_transform.origin)
+
 func take_damage(amount: int):
-	print("MeleeEnemy took damage:", amount)
-	health_component.take_damage(amount)
-	if GameSettings.healthbar_mode == 1:  # Show on Damage
-		health_bar.visible = true
-		print("HealthBar set to visible (Show on Damage)")
-		await get_tree().create_timer(3.0).timeout
-		health_bar.visible = false
-		print("HealthBar set to invisible after 3 seconds")
+	if DebugSettings.DEBUG_MODE == 1:
+		print("⚔️ MeleeEnemy hit! Damage:", amount)
+
+	if health_component:
+		health_component.take_damage(amount)
+		if DebugSettings.DEBUG_MODE == 1:
+			print("✅ HealthComponent found, applying damage.")
+	else:
+		if DebugSettings.DEBUG_MODE == 1:
+			print("❌ ERROR: No HealthComponent found in MeleeEnemy!")
 
 func _update_health(new_health: int):
-	print("MeleeEnemy health updated to:", new_health)
-	if health_bar:
-		health_bar.progress_bar.value = new_health
-		health_bar.label.text = str(new_health) + " / " + str(health_component.max_health)
-		print("HealthBar updated: ", new_health, "/", health_component.max_health)
+	if DebugSettings.DEBUG_MODE == 1:
+		print("💉 Health Updated:", new_health)
 
+	if health_bar:
+		health_bar.value = new_health  # Update the health bar value
+		health_bar.max_value = health_component.max_health  # Ensure max value is correctly set
+
+		# Change color based on health percentage
+		var health_percentage = new_health / float(health_component.max_health)
+		if health_percentage > 0.7:
+			health_bar.modulate = Color(0, 1, 0)  # Green for high health
+		elif health_percentage > 0.3:
+			health_bar.modulate = Color(1, 1, 0)  # Yellow for medium health
+		else:
+			health_bar.modulate = Color(1, 0, 0)  # Red for low health
+
+		if DebugSettings.DEBUG_MODE == 1:
+			print("✅ HealthBar updated:", new_health, "/", health_component.max_health)
+
+# Declare the _on_death method to handle when health reaches zero
 func _on_death():
-	print("Melee Enemy Defeated!")
-	queue_free()  # Remove enemy on death
+	if DebugSettings.DEBUG_MODE == 1:
+		print("💀 MeleeEnemy defeated! Removing from game.")
+	
+	# Directly remove the enemy from the game
+	queue_free()  # Removes the enemy from the game immediately

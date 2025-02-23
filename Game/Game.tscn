@@ -9,11 +9,154 @@
 
 [node name="World1_Level1" parent="." instance=ExtResource("4_e7l8c")]
 
-[node name="Player" parent="." instance=ExtResource("1_plohb")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, -4)
+[node name="Player" parent="." groups=["enemy"] instance=ExtResource("1_plohb")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9, 0, -6)
 
 [node name="FullAutoRifle1" parent="Player" instance=ExtResource("3_gwb3g")]
 transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 0, 1.5, 0.6)
 
-[node name="MeleeEnemy" parent="." instance=ExtResource("5_dut5i")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9, 2, -5)
+[node name="Enemies" type="Node" parent="."]
+
+[node name="MeleeEnemy" parent="Enemies" instance=ExtResource("5_dut5i")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 2, -16)
+
+[node name="MeleeEnemy2" parent="Enemies" instance=ExtResource("5_dut5i")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 2, -16)
+
+[node name="MeleeEnemy3" parent="Enemies" instance=ExtResource("5_dut5i")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7, 2, -16)
+
+[node name="MeleeEnemy4" parent="Enemies" instance=ExtResource("5_dut5i")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11, 2, -16)
+
+[node name="MeleeEnemy5" parent="Enemies" instance=ExtResource("5_dut5i")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13, 2, -16)
+
+[node name="MeleeEnemy6" parent="Enemies" instance=ExtResource("5_dut5i")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 15, 2, -16)
+
+[node name="MeleeEnemy7" parent="Enemies" instance=ExtResource("5_dut5i")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 2, -18)
+
+[node name="MeleeEnemy8" parent="Enemies" instance=ExtResource("5_dut5i")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 2, -18)
+
+[node name="MeleeEnemy9" parent="Enemies" instance=ExtResource("5_dut5i")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7, 2, -18)
+
+[node name="MeleeEnemy10" parent="Enemies" instance=ExtResource("5_dut5i")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11, 2, -18)
+
+[node name="MeleeEnemy11" parent="Enemies" instance=ExtResource("5_dut5i")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13, 2, -18)
+
+[node name="MeleeEnemy12" parent="Enemies" instance=ExtResource("5_dut5i")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 15, 2, -18)
+
+[node name="MeleeEnemy13" parent="Enemies" instance=ExtResource("5_dut5i")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 2, -20)
+
+[node name="MeleeEnemy14" parent="Enemies" instance=ExtResource("5_dut5i")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 2, -20)
+
+[node name="MeleeEnemy15" parent="Enemies" instance=ExtResource("5_dut5i")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7, 2, -20)
+
+[node name="MeleeEnemy16" parent="Enemies" instance=ExtResource("5_dut5i")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11, 2, -20)
+
+[node name="MeleeEnemy17" parent="Enemies" instance=ExtResource("5_dut5i")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13, 2, -20)
+
+[node name="MeleeEnemy18" parent="Enemies" instance=ExtResource("5_dut5i")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 15, 2, -20)
+
+[node name="MeleeEnemy19" parent="Enemies" instance=ExtResource("5_dut5i")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 2, -22)
+
+[node name="MeleeEnemy20" parent="Enemies" instance=ExtResource("5_dut5i")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 2, -22)
+
+[node name="MeleeEnemy21" parent="Enemies" instance=ExtResource("5_dut5i")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7, 2, -22)
+
+[node name="MeleeEnemy22" parent="Enemies" instance=ExtResource("5_dut5i")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11, 2, -22)
+
+[node name="MeleeEnemy23" parent="Enemies" instance=ExtResource("5_dut5i")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13, 2, -22)
+
+[node name="MeleeEnemy24" parent="Enemies" instance=ExtResource("5_dut5i")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 15, 2, -22)
+
+[node name="MeleeEnemy25" parent="Enemies" instance=ExtResource("5_dut5i")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 2, -24)
+
+[node name="MeleeEnemy26" parent="Enemies" instance=ExtResource("5_dut5i")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 2, -24)
+
+[node name="MeleeEnemy27" parent="Enemies" instance=ExtResource("5_dut5i")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7, 2, -24)
+
+[node name="MeleeEnemy28" parent="Enemies" instance=ExtResource("5_dut5i")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11, 2, -24)
+
+[node name="MeleeEnemy29" parent="Enemies" instance=ExtResource("5_dut5i")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13, 2, -24)
+
+[node name="MeleeEnemy30" parent="Enemies" instance=ExtResource("5_dut5i")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 15, 2, -24)
+
+[node name="MeleeEnemy31" parent="Enemies" instance=ExtResource("5_dut5i")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 2, -26)
+
+[node name="MeleeEnemy32" parent="Enemies" instance=ExtResource("5_dut5i")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 2, -26)
+
+[node name="MeleeEnemy33" parent="Enemies" instance=ExtResource("5_dut5i")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7, 2, -26)
+
+[node name="MeleeEnemy34" parent="Enemies" instance=ExtResource("5_dut5i")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11, 2, -26)
+
+[node name="MeleeEnemy35" parent="Enemies" instance=ExtResource("5_dut5i")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13, 2, -26)
+
+[node name="MeleeEnemy36" parent="Enemies" instance=ExtResource("5_dut5i")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 15, 2, -26)
+
+[node name="MeleeEnemy37" parent="Enemies" instance=ExtResource("5_dut5i")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 2, -28)
+
+[node name="MeleeEnemy38" parent="Enemies" instance=ExtResource("5_dut5i")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 2, -28)
+
+[node name="MeleeEnemy39" parent="Enemies" instance=ExtResource("5_dut5i")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7, 2, -28)
+
+[node name="MeleeEnemy40" parent="Enemies" instance=ExtResource("5_dut5i")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11, 2, -28)
+
+[node name="MeleeEnemy41" parent="Enemies" instance=ExtResource("5_dut5i")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13, 2, -28)
+
+[node name="MeleeEnemy42" parent="Enemies" instance=ExtResource("5_dut5i")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 15, 2, -28)
+
+[node name="MeleeEnemy43" parent="Enemies" instance=ExtResource("5_dut5i")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 2, -30)
+
+[node name="MeleeEnemy44" parent="Enemies" instance=ExtResource("5_dut5i")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 2, -30)
+
+[node name="MeleeEnemy45" parent="Enemies" instance=ExtResource("5_dut5i")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7, 2, -30)
+
+[node name="MeleeEnemy46" parent="Enemies" instance=ExtResource("5_dut5i")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11, 2, -30)
+
+[node name="MeleeEnemy47" parent="Enemies" instance=ExtResource("5_dut5i")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13, 2, -30)
+
+[node name="MeleeEnemy48" parent="Enemies" instance=ExtResource("5_dut5i")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 15, 2, -30)
