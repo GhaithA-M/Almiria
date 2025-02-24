@@ -4,6 +4,9 @@ class_name HealthBar
 @onready var progress_bar: ProgressBar = $ProgressBar
 @onready var label: Label = $ProgressBar/Label
 
+# Debug toggle (local)
+var LOCAL_DEBUG: bool = false # Set this to true for local debugging
+
 var target = null  # Entity this health bar belongs to
 
 # Attach the health bar to an entity

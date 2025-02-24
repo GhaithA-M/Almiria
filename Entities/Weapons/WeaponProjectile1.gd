@@ -6,6 +6,9 @@ const SPEED = 25.0
 @onready var ray = $RayCast3D
 @onready var particles = $GPUParticles3D
 
+# Debug toggle (local)
+var LOCAL_DEBUG: bool = false # Set this to true for local debugging
+
 func _ready():
 	pass
 
@@ -16,7 +19,8 @@ func _process(delta):
 		particles.emitting = true
 		ray.enabled = false
 		var collider = ray.get_collider()
-		print("Bullet hit:", collider)
+		if DebugSettings.DEBUG_MODE == 1 and LOCAL_DEBUG:
+			print("Bullet hit:", collider)
 		if collider.is_in_group("enemy"):
 			collider.take_damage(10)  # Apply damage to the enemy
 		await get_tree().create_timer(0.20).timeout  # Seconds to show impact particle

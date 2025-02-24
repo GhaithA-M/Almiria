@@ -1,27 +1,23 @@
-[gd_scene load_steps=10 format=3 uid="uid://crv0ggn8hmrto"]
+[gd_scene load_steps=8 format=3 uid="uid://crv0ggn8hmrto"]
 
 [ext_resource type="Script" path="res://Entities/Player/Player.gd" id="1_rktay"]
 [ext_resource type="Script" path="res://Entities/Player/Camera.gd" id="2_gq0ky"]
 [ext_resource type="Script" path="res://Entities/Components/HealthComponent.gd" id="2_gwbe4"]
+[ext_resource type="PackedScene" uid="uid://cglxleobnqxlk" path="res://Assets/Models/Characters/Player/Model_Player_1.tscn" id="3_dvja0"]
 [ext_resource type="Script" path="res://UI/HealthBar.gd" id="3_mo2i8"]
 
+[sub_resource type="BoxShape3D" id="BoxShape3D_lbvx0"]
+size = Vector3(0.7, 2, 0.34)
+
 [sub_resource type="SeparationRayShape3D" id="SeparationRayShape3D_mx7sh"]
-
-[sub_resource type="CapsuleMesh" id="CapsuleMesh_t8ukv"]
-
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_jcyjq"]
-albedo_color = Color(0.781614, 0.513912, 0.400263, 1)
-
-[sub_resource type="CapsuleMesh" id="CapsuleMesh_6lgtf"]
-material = SubResource("StandardMaterial3D_jcyjq")
-radius = 0.1
-height = 0.25
-
-[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_ylvku"]
 
 [node name="Player" type="CharacterBody3D"]
 transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 0, 0, 0)
 script = ExtResource("1_rktay")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+shape = SubResource("BoxShape3D_lbvx0")
 
 [node name="SpringArm3D" type="SpringArm3D" parent="."]
 shape = SubResource("SeparationRayShape3D_mx7sh")
@@ -33,21 +29,8 @@ transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 0, 2, 
 script = ExtResource("2_gq0ky")
 player = NodePath("../..")
 
-[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
-mesh = SubResource("CapsuleMesh_t8ukv")
-
-[node name="RightEye" type="MeshInstance3D" parent="MeshInstance3D"]
-transform = Transform3D(1.91069e-15, -4.37114e-08, 1, -1, -4.37114e-08, 0, 4.37114e-08, -1, -4.37114e-08, 0.2, 0.5, 0.4)
-mesh = SubResource("CapsuleMesh_6lgtf")
-
-[node name="LeftEye" type="MeshInstance3D" parent="MeshInstance3D"]
-transform = Transform3D(1.91069e-15, -4.37114e-08, 1, -1, -4.37114e-08, 0, 4.37114e-08, -1, -4.37114e-08, -0.2, 0.5, 0.4)
-mesh = SubResource("CapsuleMesh_6lgtf")
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
-shape = SubResource("CapsuleShape3D_ylvku")
+[node name="Model_Player_1" parent="." instance=ExtResource("3_dvja0")]
+transform = Transform3D(1, 0, 1.74846e-07, 0, 1, 0, -1.74846e-07, 0, 1, 0, 0, 0)
 
 [node name="Health" type="Node" parent="."]
 script = ExtResource("2_gwbe4")

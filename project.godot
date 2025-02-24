@@ -28,6 +28,8 @@ project/assembly_name="Almiria"
 [global_group]
 
 enemy="Every AI entity that can take damage"
+loot_manager=""
+item_database=""
 
 [input]
 

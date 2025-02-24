@@ -2,7 +2,10 @@ extends CharacterBody3D
 
 @export var move_speed: float = 1.5
 @export var gravity: float = 9.8
-@export var path_update_time: float = 1
+@export var path_update_time: float = 0.1
+
+# Debug toggle (local)
+var LOCAL_DEBUG: bool = false # Set this to true for local debugging
 
 var player: Node3D = null
 var last_path_update: float = 0.0
@@ -17,7 +20,7 @@ var nav_ready: bool = false  # Indicates if navigation system is ready
 
 # Fix rotation for health bar
 func _ready():
-	if DebugSettings.DEBUG_MODE == 1:
+	if DebugSettings.DEBUG_MODE == 1 and LOCAL_DEBUG:
 		print("🔹 MeleeEnemy Ready!")  # Debug: Confirms script is running
 
 	find_player()
@@ -26,19 +29,19 @@ func _ready():
 	if health_component:
 		health_component.died.connect(_on_death)  # Connect to the _on_death method
 		health_component.health_changed.connect(_update_health)
-		if DebugSettings.DEBUG_MODE == 1:
+		if DebugSettings.DEBUG_MODE == 1 and LOCAL_DEBUG:
 			print("✅ HealthComponent found:", health_component)
 	else:
-		if DebugSettings.DEBUG_MODE == 1:
+		if DebugSettings.DEBUG_MODE == 1 and LOCAL_DEBUG:
 			print("❌ ERROR: HealthComponent is MISSING!")
 
 	# Health bar visibility setup
 	if health_bar:
 		health_bar.visible = GameSettings.healthbar_mode == 2  # Show always
-		if DebugSettings.DEBUG_MODE == 1:
+		if DebugSettings.DEBUG_MODE == 1 and LOCAL_DEBUG:
 			print("✅ HealthBar is active")
 	else:
-		if DebugSettings.DEBUG_MODE == 1:
+		if DebugSettings.DEBUG_MODE == 1 and LOCAL_DEBUG:
 			print("⚠️ Warning: No HealthBar node found!")
 
 	# Health bar positioning above the enemy
@@ -48,17 +51,17 @@ func _ready():
 
 func _on_navigation_ready(_map_id = null):
 	nav_ready = true
-	if DebugSettings.DEBUG_MODE == 1:
+	if DebugSettings.DEBUG_MODE == 1 and LOCAL_DEBUG:
 		print("✅ Navigation system ready!")
 
 func find_player():
 	var players = get_tree().get_nodes_in_group("player")
 	if players.size() > 0:
 		player = players[0]
-		if DebugSettings.DEBUG_MODE == 1:
+		if DebugSettings.DEBUG_MODE == 1 and LOCAL_DEBUG:
 			print("✅ Player detected:", player)
 	else:
-		if DebugSettings.DEBUG_MODE == 1:
+		if DebugSettings.DEBUG_MODE == 1 and LOCAL_DEBUG:
 			print("❌ No player found!")
 
 func _physics_process(delta):
@@ -91,19 +94,19 @@ func _physics_process(delta):
 	health_sprite.look_at(get_viewport().get_camera_3d().global_transform.origin)
 
 func take_damage(amount: int):
-	if DebugSettings.DEBUG_MODE == 1:
+	if DebugSettings.DEBUG_MODE == 1 and LOCAL_DEBUG:
 		print("⚔️ MeleeEnemy hit! Damage:", amount)
 
 	if health_component:
 		health_component.take_damage(amount)
-		if DebugSettings.DEBUG_MODE == 1:
+		if DebugSettings.DEBUG_MODE == 1 and LOCAL_DEBUG:
 			print("✅ HealthComponent found, applying damage.")
 	else:
-		if DebugSettings.DEBUG_MODE == 1:
+		if DebugSettings.DEBUG_MODE == 1 and LOCAL_DEBUG:
 			print("❌ ERROR: No HealthComponent found in MeleeEnemy!")
 
 func _update_health(new_health: int):
-	if DebugSettings.DEBUG_MODE == 1:
+	if DebugSettings.DEBUG_MODE == 1 and LOCAL_DEBUG:
 		print("💉 Health Updated:", new_health)
 
 	if health_bar:
@@ -119,13 +122,25 @@ func _update_health(new_health: int):
 		else:
 			health_bar.modulate = Color(1, 0, 0)  # Red for low health
 
-		if DebugSettings.DEBUG_MODE == 1:
+		if DebugSettings.DEBUG_MODE == 1 and LOCAL_DEBUG:
 			print("✅ HealthBar updated:", new_health, "/", health_component.max_health)
 
 # Declare the _on_death method to handle when health reaches zero
 func _on_death():
-	if DebugSettings.DEBUG_MODE == 1:
-		print("💀 MeleeEnemy defeated! Removing from game.")
+	if DebugSettings.DEBUG_MODE == 1 and LOCAL_DEBUG:
+		print("💀 MeleeEnemy defeated! Dropping loot.")
+
+	var loot_manager = get_tree().get_first_node_in_group("loot_manager")
 	
-	# Directly remove the enemy from the game
-	queue_free()  # Removes the enemy from the game immediately
+	if loot_manager == null:
+		if DebugSettings.DEBUG_MODE == 1 or LOCAL_DEBUG:
+			print("❌ ERROR: LootManager not found!")
+		queue_free()  # Still remove enemy to avoid game-breaking issues
+		return
+
+	var dropped_item = loot_manager.get_loot("MeleeEnemy")
+
+	if dropped_item:
+		loot_manager.spawn_loot(dropped_item, global_transform.origin)
+
+	queue_free()  # Remove the enemy after death

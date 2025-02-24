@@ -1,0 +1,40 @@
+[gd_scene load_steps=5 format=3 uid="uid://csjybje6odqws"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_fn3gn"]
+albedo_color = Color(0, 0, 0, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_nj5rx"]
+material = SubResource("StandardMaterial3D_fn3gn")
+size = Vector3(0.13, 0.055, 0.28)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_1p7pm"]
+albedo_color = Color(0, 0, 0, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_rxdi5"]
+material = SubResource("StandardMaterial3D_1p7pm")
+size = Vector3(0.13, 0.015, 0.14)
+
+[node name="Node3D" type="Node3D"]
+
+[node name="Right" type="Node3D" parent="."]
+
+[node name="Foot_Right" type="MeshInstance3D" parent="Right"]
+mesh = SubResource("BoxMesh_nj5rx")
+skeleton = NodePath("../..")
+
+[node name="Heel_Right" type="MeshInstance3D" parent="Right"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.0350301, -0.07)
+mesh = SubResource("BoxMesh_rxdi5")
+skeleton = NodePath("../..")
+
+[node name="Left" type="Node3D" parent="."]
+
+[node name="Foot_Left" type="MeshInstance3D" parent="Left"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.36527, 0, 0)
+mesh = SubResource("BoxMesh_nj5rx")
+skeleton = NodePath("../..")
+
+[node name="Heel_Left" type="MeshInstance3D" parent="Left"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.36527, 0.0350301, -0.07)
+mesh = SubResource("BoxMesh_rxdi5")
+skeleton = NodePath("../..")
