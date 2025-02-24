@@ -12,7 +12,7 @@
 
 [node name="World1_Level1" parent="." instance=ExtResource("4_e7l8c")]
 
-[node name="Player" parent="." groups=["enemy"] instance=ExtResource("1_plohb")]
+[node name="Player" parent="." instance=ExtResource("1_plohb")]
 transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 9, 0.1, -6)
 
 [node name="FullAutoRifle1" parent="Player" instance=ExtResource("3_gwb3g")]

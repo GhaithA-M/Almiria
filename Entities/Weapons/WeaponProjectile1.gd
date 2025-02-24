@@ -22,7 +22,7 @@ func _process(delta):
 		if DebugSettings.DEBUG_MODE == 1 and LOCAL_DEBUG:
 			print("Bullet hit:", collider)
 		if collider.is_in_group("enemy"):
-			collider.take_damage(10)  # Apply damage to the enemy
+			collider.take_damage(100)  # Apply damage to the enemy
 		await get_tree().create_timer(0.20).timeout  # Seconds to show impact particle
 		queue_free()
 

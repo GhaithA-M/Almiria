@@ -5,16 +5,43 @@ class_name LootItem
 var item: Item = null
 
 # Debug toggle (global and local)
-var LOCAL_DEBUG: bool = false # Enable local debugging
+var LOCAL_DEBUG: bool = true # Enable local debugging
 
 # Node references
 @onready var model: MeshInstance3D = $Model
 @onready var collision: CollisionShape3D = $Collision
 @onready var interact_label: Label3D = $InteractLabel
 
+var player_nearby: bool = false  # Tracks if the player is within pickup range
+
 func _ready():
-	gravity_scale = 1.0  # Enable gravity so the loot falls naturally
-	_update_interact_label(false)
+	# Ensure all nodes are found
+	model = get_node_or_null("Model")
+	collision = get_node_or_null("Collision")
+	interact_label = get_node_or_null("InteractLabel")
+	var interaction_area = get_node_or_null("InteractionArea")
+	
+	# Debugging to confirm nodes exist
+	if model == null:
+		_debug_log("❌ ERROR: Model node not found in LootItem.tscn!")
+	if collision == null:
+		_debug_log("❌ ERROR: Collision node not found in LootItem.tscn!")
+	if interact_label == null:
+		_debug_log("❌ ERROR: InteractLabel not found in LootItem.tscn!")
+	if interaction_area == null:
+		_debug_log("❌ ERROR: InteractionArea not found in LootItem.tscn!")
+	
+	# Set up InteractionArea detection
+	if interaction_area:
+		interaction_area.body_entered.connect(_on_interaction_area_entered)
+		interaction_area.body_exited.connect(_on_interaction_area_exited)
+	
+	# Hide label by default
+	if interact_label:
+		interact_label.visible = false
+
+	set_process_input(true)  # Enable input detection
+	_debug_log("✅ LootItem is ready and listening for interactions.")
 
 func set_item(new_item: Item):
 	item = new_item
@@ -43,13 +70,24 @@ func _update_interact_label(visible: bool):
 		if item:
 			interact_label.text = "[E] Pick up " + item.name
 
-func _on_body_entered(body):
+func _on_interaction_area_entered(body):
 	if body.is_in_group("player"):
+		player_nearby = true
 		_update_interact_label(true)
+		_debug_log("Player is near loot!")
 
-func _on_body_exited(body):
+func _on_interaction_area_exited(body):
 	if body.is_in_group("player"):
+		player_nearby = false
 		_update_interact_label(false)
+		_debug_log("Player left loot range.")
+
+func _input(event):
+	if event.is_action_pressed("pickup_item"):
+		_debug_log("Pickup key pressed!")
+	
+	if player_nearby and event.is_action_pressed("pickup_item"):
+		pickup()
 
 func pickup():
 	if item:
