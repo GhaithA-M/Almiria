@@ -1,12 +1,16 @@
-[gd_scene load_steps=8 format=3 uid="uid://knmtwmx8obbn"]
+[gd_scene load_steps=12 format=3 uid="uid://knmtwmx8obbn"]
 
 [ext_resource type="PackedScene" uid="uid://crv0ggn8hmrto" path="res://Entities/Player/Player.tscn" id="1_plohb"]
 [ext_resource type="PackedScene" uid="uid://bbvw681yvkiqo" path="res://Entities/Weapons/FullAutoRifle1.tscn" id="3_gwb3g"]
 [ext_resource type="PackedScene" uid="uid://drddbewp1vrvh" path="res://Worlds/TestWorld/TestWorld_Level1.tscn" id="4_e7l8c"]
 [ext_resource type="PackedScene" uid="uid://csjybje6odqws" path="res://Assets/Models/Equipment/Boots/Boots_Basic.tscn" id="4_pd8yl"]
 [ext_resource type="PackedScene" uid="uid://t1huqq1v00h6" path="res://Entities/Enemies/MeleeEnemy.tscn" id="5_dut5i"]
+[ext_resource type="Script" path="res://Systems/Inventory/LootTables.gd" id="6_4xepx"]
 [ext_resource type="Script" path="res://Systems/Inventory/LootManager.gd" id="6_8dcuv"]
 [ext_resource type="Script" path="res://Systems/Items/ItemDatabase.gd" id="7_ix31x"]
+[ext_resource type="Script" path="res://Systems/Inventory/Inventory.gd" id="7_rkfhg"]
+[ext_resource type="PackedScene" uid="uid://dalth6p36oih8" path="res://UI/InventoryUI.tscn" id="10_12dq0"]
+[ext_resource type="Script" path="res://UI/UIManager.gd" id="10_kow50"]
 
 [node name="Game" type="Node3D"]
 
@@ -20,6 +24,18 @@ transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 0, 1.5
 
 [node name="Node3D" parent="Player" instance=ExtResource("4_pd8yl")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.185608, 0.0076858, 0.0771356)
+
+[node name="LootManager" type="Node" parent="." groups=["loot_manager"]]
+script = ExtResource("6_8dcuv")
+
+[node name="LootTables" type="Node" parent="." groups=["loot_tables"]]
+script = ExtResource("6_4xepx")
+
+[node name="ItemDatabase" type="Node" parent="." groups=["item_database"]]
+script = ExtResource("7_ix31x")
+
+[node name="Inventory" type="Node" parent="." groups=["inventory"]]
+script = ExtResource("7_rkfhg")
 
 [node name="Enemies" type="Node" parent="."]
 
@@ -167,8 +183,8 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13, 1.2, -30)
 [node name="MeleeEnemy48" parent="Enemies" instance=ExtResource("5_dut5i")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 15, 1.2, -30)
 
-[node name="LootManager" type="Node" parent="." groups=["loot_manager"]]
-script = ExtResource("6_8dcuv")
+[node name="UIManager" type="CanvasLayer" parent="."]
+script = ExtResource("10_kow50")
 
-[node name="ItemDatabase" type="Node" parent="." groups=["item_database"]]
-script = ExtResource("7_ix31x")
+[node name="InventoryUI" parent="UIManager" instance=ExtResource("10_12dq0")]
+visible = false

@@ -1,0 +1,84 @@
+[gd_scene format=3 uid="uid://dalth6p36oih8"]
+
+[node name="InventoryUI" type="Control"]
+layout_mode = 3
+anchor_left = 0.55
+anchor_top = 0.02
+anchor_right = 0.98
+anchor_bottom = 0.98
+offset_top = 10.0
+offset_right = 5.0
+offset_bottom = -10.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_vertical = 4
+
+[node name="Tabs" type="TabContainer" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = 0.240051
+offset_bottom = -0.0800171
+current_tab = 0
+
+[node name="EquipmentTab" type="Control" parent="Tabs"]
+layout_mode = 2
+metadata/_tab_index = 0
+
+[node name="MainLayout" type="VBoxContainer" parent="Tabs/EquipmentTab"]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 1.0
+anchor_bottom = 1.0
+
+[node name="TopPanel" type="HBoxContainer" parent="Tabs/EquipmentTab/MainLayout"]
+layout_mode = 2
+size_flags_vertical = 2
+size_flags_stretch_ratio = 3.0
+
+[node name="StatsPanel" type="Control" parent="Tabs/EquipmentTab/MainLayout/TopPanel"]
+custom_minimum_size = Vector2(150, 0)
+layout_mode = 2
+size_flags_horizontal = 0
+
+[node name="Label" type="Label" parent="Tabs/EquipmentTab/MainLayout/TopPanel/StatsPanel"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+text = "Stats"
+
+[node name="CharacterView" type="Control" parent="Tabs/EquipmentTab/MainLayout/TopPanel"]
+custom_minimum_size = Vector2(150, 0)
+layout_mode = 2
+size_flags_horizontal = 6
+
+[node name="ColorRect" type="ColorRect" parent="Tabs/EquipmentTab/MainLayout/TopPanel/CharacterView"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="EquipmentSlots" type="Control" parent="Tabs/EquipmentTab/MainLayout/TopPanel"]
+custom_minimum_size = Vector2(150, 0)
+layout_mode = 2
+size_flags_horizontal = 8
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Tabs/EquipmentTab/MainLayout/TopPanel/EquipmentSlots"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="AspectsTab" type="Control" parent="Tabs"]
+visible = false
+layout_mode = 2
+metadata/_tab_index = 1
+
+[node name="ConsumablesTab" type="Control" parent="Tabs"]
+visible = false
+layout_mode = 2
+metadata/_tab_index = 2
+
+[node name="QuestTab" type="Control" parent="Tabs"]
+visible = false
+layout_mode = 2
+metadata/_tab_index = 3

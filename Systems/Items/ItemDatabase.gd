@@ -1,12 +1,21 @@
 extends Node
 class_name ItemDatabase
 
+# Debug toggle (local)
+var LOCAL_DEBUG: bool = false # Enable local debugging
+
 # Dictionary to store predefined items
 var items: Dictionary = {}
 
 func _ready():
+	if DebugSettings.DEBUG_MODE == 1 and LOCAL_DEBUG:
+		_debug_log("Initializing item database...")
+	
 	_initialize_items()
-	_debug_log("Item database initialized with %d items." % items.size())
+	
+	if DebugSettings.DEBUG_MODE == 1 and LOCAL_DEBUG:
+		_debug_log("Item database initialized with %d items." % items.size())
+
 
 # Function to initialize test items
 func _initialize_items():
