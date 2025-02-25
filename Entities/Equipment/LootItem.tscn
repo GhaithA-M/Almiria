@@ -25,7 +25,7 @@ mesh = SubResource("BoxMesh_kimd3")
 shape = SubResource("BoxShape3D_csyvg")
 
 [node name="InteractLabel" type="Label3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.15, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.25, 0)
 visible = false
 font_size = 24
 

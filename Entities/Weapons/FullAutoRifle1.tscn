@@ -76,6 +76,7 @@ libraries = {
 [node name="FireTimer" type="Timer" parent="."]
 
 [node name="Control" type="Control" parent="."]
+visible = false
 layout_mode = 3
 anchors_preset = 8
 anchor_left = 0.5
@@ -88,7 +89,6 @@ size_flags_horizontal = 4
 size_flags_vertical = 4
 
 [node name="Crosshair" parent="Control" instance=ExtResource("2_u60yw")]
-visible = false
 layout_mode = 1
 anchors_preset = -1
 offset_left = -16.0

@@ -1,19 +1,24 @@
 extends Node
 
 # Debug toggle (local)
-var LOCAL_DEBUG: bool = true  # Enable local debugging
+var LOCAL_DEBUG: bool = false  # Enable local debugging
 
-var inventory_ui: Control  # Declare the variable
+@onready var inventory_ui: Control = get_node("InventoryUI")  # Use the same method as before
+@onready var camera: Camera3D = get_node("Camera")  # Use the exact path that worked before
 
 func _ready() -> void:
-	inventory_ui = get_node_or_null("InventoryUI")  # Use `get_node_or_null` to avoid crashes
 	if inventory_ui:
 		inventory_ui.visible = false  # Start hidden
 		if DebugSettings.DEBUG_MODE == 1 and LOCAL_DEBUG:
 			print("[UIManager] InventoryUI found. Setting visible = false.")
-	else:
+	elif DebugSettings.DEBUG_MODE == 1 and LOCAL_DEBUG:
+		print("[UIManager] ERROR: InventoryUI not found! Check node path.")
+
+	if camera:
 		if DebugSettings.DEBUG_MODE == 1 and LOCAL_DEBUG:
-			print("[UIManager] ERROR: InventoryUI not found!")
+			print("[UIManager] Camera found.")
+	elif DebugSettings.DEBUG_MODE == 1 and LOCAL_DEBUG:
+		print("[UIManager] ERROR: Camera not found! Check node path.")
 
 func _input(event: InputEvent) -> void:
 	if event.is_action_pressed("toggle_inventory"):
@@ -29,14 +34,13 @@ func toggle_inventory() -> void:
 
 		if inventory_ui.visible:
 			if DebugSettings.DEBUG_MODE == 1 and LOCAL_DEBUG:
-				print("[UIManager] Unlocking mouse pointer & pausing player controls.")
+				print("[UIManager] Unlocking mouse pointer & disabling camera control.")
 			Input.mouse_mode = Input.MOUSE_MODE_VISIBLE  # Show mouse
-			get_tree().paused = true  # **Pauses game logic (fixes wild aiming)**
+			if camera:
+				camera.is_inventory_open = true  # Stop camera movement
 		else:
 			if DebugSettings.DEBUG_MODE == 1 and LOCAL_DEBUG:
-				print("[UIManager] Locking mouse pointer & resuming player controls.")
+				print("[UIManager] Locking mouse pointer & enabling camera control.")
 			Input.mouse_mode = Input.MOUSE_MODE_CAPTURED  # Lock mouse back in
-			get_tree().paused = false  # **Resumes game logic**
-	else:
-		if DebugSettings.DEBUG_MODE == 1 and LOCAL_DEBUG:
-			print("[UIManager] ERROR: InventoryUI is null!")
+			if camera:
+				camera.is_inventory_open = false  # Resume camera movement

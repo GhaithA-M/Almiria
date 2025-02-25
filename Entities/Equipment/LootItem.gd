@@ -71,9 +71,18 @@ func _update_interact_label(visible: bool):
 	if interact_label:
 		interact_label.visible = visible
 		if item:
-			interact_label.text = "[E] Pick up " + item.name
+			var key_name = _get_keybind_for_action("pickup_item")  # Get the actual keybind
+			interact_label.text = "[" + key_name + "] " + item.name
 	if DebugSettings.DEBUG_MODE == 1 and LOCAL_DEBUG:
 		_debug_log("Interact label updated: %s" % visible)
+
+func _get_keybind_for_action(action: String) -> String:
+	var input_events = InputMap.action_get_events(action)
+	if input_events.size() > 0:
+		for event in input_events:
+			if event is InputEventKey:  # Ensure it's a key event
+				return OS.get_keycode_string(event.physical_keycode)  # Use physical_keycode for consistency
+	return "?"
 
 func _on_interaction_area_entered(body):
 	if body.is_in_group("player"):
