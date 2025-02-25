@@ -1,4 +1,7 @@
-[gd_scene format=3 uid="uid://dalth6p36oih8"]
+[gd_scene load_steps=3 format=3 uid="uid://dalth6p36oih8"]
+
+[ext_resource type="Script" path="res://UI/InventoryUI.gd" id="1_othih"]
+[ext_resource type="PackedScene" uid="uid://cgpi1aenx2oxv" path="res://UI/InventorySlotTemplate.tscn" id="2_ht8gy"]
 
 [node name="InventoryUI" type="Control"]
 layout_mode = 3
@@ -12,6 +15,7 @@ offset_bottom = -10.0
 grow_horizontal = 2
 grow_vertical = 2
 size_flags_vertical = 4
+script = ExtResource("1_othih")
 
 [node name="Tabs" type="TabContainer" parent="."]
 layout_mode = 1
@@ -67,6 +71,9 @@ size_flags_horizontal = 8
 layout_mode = 0
 offset_right = 40.0
 offset_bottom = 40.0
+
+[node name="InventorySlotTemplate" parent="Tabs/EquipmentTab/MainLayout/TopPanel/EquipmentSlots/VBoxContainer" instance=ExtResource("2_ht8gy")]
+layout_mode = 2
 
 [node name="AspectsTab" type="Control" parent="Tabs"]
 visible = false

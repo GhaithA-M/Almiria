@@ -14,7 +14,7 @@ albedo_color = Color(0, 0, 0, 1)
 material = SubResource("StandardMaterial3D_1p7pm")
 size = Vector3(0.13, 0.015, 0.14)
 
-[node name="Node3D" type="Node3D"]
+[node name="Boots_Basic" type="Node3D"]
 
 [node name="Right" type="Node3D" parent="."]
 

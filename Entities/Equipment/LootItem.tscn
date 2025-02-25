@@ -21,7 +21,7 @@ script = ExtResource("1_0i2vt")
 [node name="Model" type="MeshInstance3D" parent="."]
 mesh = SubResource("BoxMesh_kimd3")
 
-[node name="Collission" type="CollisionShape3D" parent="."]
+[node name="Collision" type="CollisionShape3D" parent="."]
 shape = SubResource("BoxShape3D_csyvg")
 
 [node name="InteractLabel" type="Label3D" parent="."]

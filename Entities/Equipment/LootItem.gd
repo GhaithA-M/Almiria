@@ -5,7 +5,7 @@ class_name LootItem
 var item: Item = null
 
 # Debug toggle (local)
-var LOCAL_DEBUG: bool = false # Enable local debugging
+var LOCAL_DEBUG: bool = false  # Enable local debugging
 
 # Node references
 @onready var model: MeshInstance3D = get_node_or_null("Model")
@@ -19,7 +19,16 @@ var player_nearby: bool = false  # Tracks if the player is within pickup range
 func _ready():
 	if DebugSettings.DEBUG_MODE == 1 and LOCAL_DEBUG:
 		print("[LootItem Debug] Initializing loot item")
-	
+
+	_check_nodes()
+	_setup_interaction_signals()
+	_update_interact_label(false)
+	set_process_input(true)
+
+	if DebugSettings.DEBUG_MODE == 1 and LOCAL_DEBUG:
+		_debug_log("✅ LootItem is ready and listening for interactions.")
+
+func _check_nodes():
 	if DebugSettings.DEBUG_MODE == 1 and LOCAL_DEBUG:
 		if model == null:
 			_debug_log("❌ ERROR: Model node not found in LootItem.tscn!")
@@ -31,20 +40,15 @@ func _ready():
 			_debug_log("❌ ERROR: InteractionArea not found in LootItem.tscn!")
 		if inventory == null:
 			_debug_log("❌ ERROR: Inventory system not found in scene!")
-	
-	# Ensure interaction area connects signals
+
+func _setup_interaction_signals():
 	if interaction_area:
 		interaction_area.body_entered.connect(_on_interaction_area_entered)
 		interaction_area.body_exited.connect(_on_interaction_area_exited)
-	
-	_update_interact_label(false)
-	set_process_input(true)  # Ensure input processing is enabled
-	if DebugSettings.DEBUG_MODE == 1 and LOCAL_DEBUG:
-		_debug_log("✅ LootItem is ready and listening for interactions.")
 
 func set_item(new_item: Item):
 	if DebugSettings.DEBUG_MODE == 1 and LOCAL_DEBUG:
-		print("[LootItem Debug] Setting item: ", new_item.name)
+		_debug_log("Setting item: %s" % new_item.name)
 	item = new_item
 	_update_visual()
 	_update_interact_label(true)
@@ -71,7 +75,7 @@ func _update_interact_label(visible: bool):
 	if interact_label:
 		interact_label.visible = visible
 		if item:
-			var key_name = _get_keybind_for_action("pickup_item")  # Get the actual keybind
+			var key_name = _get_keybind_for_action("pickup_item")
 			interact_label.text = "[" + key_name + "] " + item.name
 	if DebugSettings.DEBUG_MODE == 1 and LOCAL_DEBUG:
 		_debug_log("Interact label updated: %s" % visible)
@@ -80,8 +84,8 @@ func _get_keybind_for_action(action: String) -> String:
 	var input_events = InputMap.action_get_events(action)
 	if input_events.size() > 0:
 		for event in input_events:
-			if event is InputEventKey:  # Ensure it's a key event
-				return OS.get_keycode_string(event.physical_keycode)  # Use physical_keycode for consistency
+			if event is InputEventKey:
+				return OS.get_keycode_string(event.physical_keycode)
 	return "?"
 
 func _on_interaction_area_entered(body):
@@ -101,23 +105,23 @@ func _on_interaction_area_exited(body):
 func _input(event):
 	if DebugSettings.DEBUG_MODE == 1 and LOCAL_DEBUG:
 		print("[LootItem Debug] Processing input event")
-	
+
 	if event.is_action_pressed("pickup_item") and DebugSettings.DEBUG_MODE == 1 and LOCAL_DEBUG:
 		_debug_log("Pickup key pressed!")
-	
+
 	if player_nearby and event.is_action_pressed("pickup_item"):
 		pickup()
 
 func pickup():
 	if DebugSettings.DEBUG_MODE == 1 and LOCAL_DEBUG:
-		print("[LootItem Debug] Attempting to pick up item")
-	
+		_debug_log("Attempting to pick up item")
+
 	if item:
 		if inventory:
 			inventory.add_item(item)
 			if DebugSettings.DEBUG_MODE == 1 and LOCAL_DEBUG:
 				_debug_log("Picked up item: %s" % item.name)
-			queue_free()  # Remove loot after pickup
+			queue_free()
 		else:
 			if DebugSettings.DEBUG_MODE == 1 and LOCAL_DEBUG:
 				_debug_log("❌ ERROR: Inventory system not found, cannot pick up item!")

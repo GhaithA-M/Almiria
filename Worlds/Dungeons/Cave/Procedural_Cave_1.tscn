@@ -1,0 +1,14 @@
+[gd_scene load_steps=4 format=3 uid="uid://dvks5afcoduu4"]
+
+[ext_resource type="Script" path="res://Systems/DungeonGeneration/DungeonGenerator.gd" id="1_68o7h"]
+
+[sub_resource type="MeshLibrary" id="MeshLibrary_inul1"]
+
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_nkf36"]
+
+[node name="Procedural_Cave_1" type="Node3D"]
+script = ExtResource("1_68o7h")
+
+[node name="GridMap" type="GridMap" parent="."]
+mesh_library = SubResource("MeshLibrary_inul1")
+physics_material = SubResource("PhysicsMaterial_nkf36")
